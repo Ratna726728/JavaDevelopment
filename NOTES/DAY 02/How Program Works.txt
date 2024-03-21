@@ -1,0 +1,27 @@
+How Program works internally?
+
+Java works on both principle of compiling and interpretation if your using IDE. If your using only notepad then it works on compiling.
+
+Compilation :
+
+When we compile Java program using javac tool, the Java compiler converts the source code into byte code.
+
+Java code(.java) ----> compiler ----> Byte Code(.class)
+
+What Happens at runtime?
+
+Step1: Source code (.java file) creation
+Step2: Loading source code into classloader
+Step3: Bytecode Verifier
+Step4: Interpreter
+Step5: Runtime
+Step6: Hardware
+
+Source code creation:  The java code which we write in IDE or in some other editor. Source code is having .java extension.
+
+Classloader: It is the subsystem of JVM that is used to load class files.
+
+Bytecode Verifier: Checks the code fragments for illegal code that can violate access rights to objects.
+
+Interpreter: Read bytecode stream then execute the instructions.
+
