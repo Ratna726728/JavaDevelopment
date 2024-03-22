@@ -1,0 +1,64 @@
+Keywords
+
+Java keywords are also known as reserved words.
+
+Keywords are particular words that act as a key to a code.
+
+These are predefined words by Java so they cannot be used as a variable or object name or class name.
+
+There are total 49 Keywords in java.
+
+Listed as below:
+
+1. abstract
+2. assert
+3. boolean
+4. break
+5. byte
+6. case
+7. catch
+8. char
+9. class
+10. const
+11. continue
+12. default
+13. do 
+14. double
+15. else
+16. extends
+17. enum
+18. final
+19. finally
+20. float
+21. for
+22. if
+23. implements
+24. import
+25. instanceOf
+26. int 
+27. interface 
+28. long
+29. native
+30. new
+31. package
+32. private
+33. protected
+34. public
+35. return 
+36. short
+37. static 
+38. strictfp
+39. super
+40. switch
+41. synchronized
+42. this
+43. throws
+44. throw
+45. transient
+46. try
+47. void
+48  volatile
+49. while
+
+
+

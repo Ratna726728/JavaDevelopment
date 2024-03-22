@@ -1,0 +1,90 @@
+Data Types
+
+
+Data types specify the different sizes and values that can be stored in the variable.
+
+There are two types of data types in Java:
+1. Primitive’s data types
+2. Non-primitive’s data types
+
+
+(Img: DataTypes.jpg)
+
+1] Primitive Data Type
+
+In Java language, primitive data types are the building blocks of data manipulation.
+
+Primitive data types are having its memory size fixed.
+
+They start with lower case.
+
+Primitive data types are keywords.
+
+Below is the list of primitive Data types:
+1. byte
+2. short
+3. int
+4. long
+5. float
+6. double
+7. boolean
+8. char
+
+
+1. byte: 
+It store the number range from -128 to 127.
+It has default size is 1 byte and default value is 0. 
+
+
+2. short: 
+It stores the number range from -32768 to 32767.
+It has default size is 2 byte and default value is 0.
+
+ 
+3. int:
+It stores the number range from -2147483648 to 2147483647. 
+It has default size is 4 byte and default value is 0.
+
+
+4. long:
+It stores the number range from - 9,223,372,036,854,775,808 to 9,223,372,036,854,775,807. 
+It has default size is 8 byte and default value is 0.
+
+
+
+5.   float: 
+It store the number range from 3.4e-038 to 3.4e+038.
+It has default size is 4 byte and default value is 0.0 
+
+
+6.   double: 
+It stores the number range from 1.7e-308 to 1.7e+308.
+It has default size is 8 byte and default value is 0.0
+
+ 
+7.   boolean:
+It stores the value in true or false. 
+It has default size is 1 bit and default value is false.
+
+
+8.    char:
+It is used to store the single character. Which is enclosed within single quotes only.  
+It has default size is 2 byte.
+
+
+(Img: Primitive datatype size chart.jpg)
+
+2. Non-Primitives Data Type
+
+The memory size of non- primitive data type is not fixed.
+
+Non-primitive data type starts with upper case letter.
+
+Non-primitives data types are identifiers.
+
+List of Non- primitive data types:
+1. String
+2. Array
+3. Class
+4. Interface
+
