@@ -14,3 +14,8 @@ HACKERRANK: Java If-else, Java Stdin and Stdout II, Java output formatting.<br>
 DAY 03:<br>
 NOTES: Keywords, Datatypes.<br>
 HACKERRANK: Java Loops I, Java Loops II <br>
+
+DAY 04:<br>
+NOTES: class and objects, Variables.<br>
+HACKERRANK: Java DataTypes, Java Static Initializer block, Java end of file.<br>
+
