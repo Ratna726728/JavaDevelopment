@@ -1,0 +1,92 @@
+Class And Objects
+
+Class is the template or blueprint from which object is created.
+
+Objects is the instance of class.
+
+An object in Java is the physical as well as a logical entity, whereas, a class in Java is a logical entity only.
+
+Class contains fields, methods, constructor, blocks, nested class and interfaces.
+
+Class can only be accessed from outside via its instance.
+
+There are two types of class:
+1. Built-in class.
+2. User Defined or custom class in java.
+
+
+1. Built-in class.
+
+Built-in classes in java are the classes which come bundled within predefined packages in java.
+
+A few Majorly used built-in class in java are:
+i. java.lang.String
+ii. java.lang.System
+iii. java.lang.Exception
+iv. java.lang.Objects
+v. java.lang.Class
+vi. java.util.Date
+vii. java.util.HashMap
+viii. java.util.ArrayList
+ix. java.util.Iterator
+x. java.lang.Thread
+
+
+2.   User defined or custom class
+
+A class that is created by user called as Custom class.
+
+Syntax:
+<access specifier> class <class name>{
+        //Class body
+}
+
+
+RULES for class:
+
+1. A java class must have class keyword followed by the class name.
+
+2. The class name must start with the capital letter and if you are using more than one word to define class name,
+every first letter of the word should be made capital. E.g. StudentName.
+
+3. There should not be any blank spaces or special characters used in a class name except the dollor symbol($) 
+and the underscore(_).
+
+4. A java class can only have public or default access specifier.
+
+5. It can extend only one parent class. By Default, all the classes extend java.lang.Object directly or  indirectly.
+
+6. A class may optionally implement any number of interfaces separated by commas.
+
+7. The separate class members must be always declared within a set of curly braces{}.
+
+8. Class containing the main() method is known as the main class as it will act as the entry point to your program.
+
+
+
+Objects:
+
+An Object in java is the real world entity which has its own state and behaviour.
+
+A java program can have as many objects as required.
+
+When we create an object(instance) of class then space is reserved in heap memory.
+
+For  e.g.
+Test test = new Test():
+Where test is the object of Test class.
+
+
+public class Test{
+      int a =10;
+      public static void main(String args[]){
+	Test test = new Test();
+	System.out.println(test.a);
+      }
+}
+
+
+here in the above example, variable a is a global variable which is initialized with 10 value.
+as it is declared outside the main method we cannot access it directly. To access global variable inside main method,
+we require to create the object of class, By using object of class we can call the global variable inside method
+and use it accordingly our requirement.

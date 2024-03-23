@@ -1,0 +1,96 @@
+#Variables:
+
+It is an entity that may vary during the execution of program called as Variable
+
+Variable is  a name which is associated with a value that can be changed.
+
+A variable is a container which holds the value while the Java program is executed.
+A variable is assigned with a data type.
+
+A variable is the name of a reserved area allocated in memory. In other words, it is a name of the 
+memory location. It is a combination of "vary + able" which means its value can be changed.
+
+There are three types of variables in java:
+1. Local Variable
+2. Global Variable(Instance Variable)
+3. Static Variable
+
+
+#Guidelines for declaring a variable:
+
+
+Variable name is the combination of any alphabets, digits and special symbol.
+
+First character in variable name must be alphabets or underscore not digits.
+
+Variable name must be some meaningful words.
+
+No blanks are allowed in variable name.
+
+Variable is declared followed by semi-colon(;).
+
+E.g.
+
+int Student_name;         //allowed
+float 5;                  //not allowed
+double _a;                //allowed
+int a;                    //allowed
+int Student Data;         //not allowed
+byte Student_5_Guidelines;//allowed
+
+
+1. Global variable:
+
+It is defined outside of method but inside the class called global variable.
+
+It is called as instance variable.
+
+Declaration and initialization of global variable:
+
+int a;// declaration of global variable
+int b=10; // initialization of global variable
+
+E.g.
+public class Example{
+     int a;
+     int b=30;
+    public static void main(String args[]){
+	Example example = new Example();
+	System.out.println(example.b);
+     }
+}
+
+In above example, we have declared a and b variable globally, outside of the method.
+
+It is initialized automatically by JVM and default value is 0.
+
+Global variables are stored in heap area.
+
+Each instance(Objects) of class has its own  copy of instance variable.
+
+Scope is anywhere in the class.
+
+
+
+2. Local Variables:
+
+It is declared inside method body called as local variable.
+
+It is also declared in constructor or block.
+
+E.g.
+public class Example{
+      public static void main(String args[]){
+	int x;
+	System.out.println(x);
+      }
+}
+Scope  is within the method, constructor and block only.
+
+Local variable is also declared in constructor.
+
+It does not initialized automatically.
+
+Local variables are stored in stack area.
+
+
