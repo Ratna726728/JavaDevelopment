@@ -1,0 +1,106 @@
+Methods
+
+
+It is block of statements are used to perform the task called as methods.
+
+We write methods to avoid rewriting same code again and again.
+
+Writing all codes into one method that is not good programmer practice.
+
+Syntax:
+[Specifiers] return_typeMethod_Name(arg1, arg2){
+	statement1
+	statement2
+	………………..
+	………………..
+	statement n
+}
+
+(Note- method Arguments is an optional thing).
+
+Method Declaration:
+
+public int add(int a, int b){
+	//method body
+	
+}
+
+where, public is access specifier.
+int is return type.
+add is method name.
+(int a, int b) are the parameter list.
+
+for more understanding please check image.(Img: method declaration.jpg)
+
+There are two types of methods:
+1. Predefined Method
+2. User-defined Method
+
+
+RULES FOR METHODS:
+
+Method name in camel case only.
+
+E.g. if your method name is addstudent() then as per java coding standards, 
+it should be like addStudent(). It means always starts with lower case letter.
+
+Method name should be some meaningful name, so developer can easily identify it what are 
+the operation are performed in that methods.
+
+Method is always enclosed within curly brackets { }.
+
+
+1. Predefined Method:
+
+In Java, predefined methods are the method that is already defined in the 
+Java class libraries is known as predefined methods.
+
+It is also known as the standard library method or built-in method. 
+
+We can directly use these methods just by calling them in the program at any point. 
+
+Some pre-defined methods are length(), equals(), compareTo(), sqrt(), etc.
+ 
+When we call any of the predefined methods in our program, a series of codes 
+related to the corresponding method runs in the background that is already stored in the library.
+
+
+2. User-Defined Method:
+
+The method written by the user or programmer is known as a user-defined method.
+
+These methods are modified according to the requirement.
+
+There are two types of methods as:
+1. Static Method
+2. Non-Static method
+
+
+1. Static Method:
+
+When you define a method in class with using static keyword called as static method.
+
+We can call this method by three ways.
+1. By using class name.
+e.g. Example.test();
+
+2. By creating object of class.
+e.g. Example example = new Example();
+example.test();
+
+3. By method name itself.
+e.g. test();
+
+
+
+2. Non-Static Method:
+
+When you define method in class without using static keyword called as non-static method.
+
+It is also known as instance method.
+
+We can call this method by creating object of class only.
+Example example = new Example();
+example.test();
+
+
