@@ -19,3 +19,7 @@ DAY 04:<br>
 NOTES: class and objects, Variables.<br>
 HACKERRANK: Java DataTypes, Java Static Initializer block, Java end of file.<br>
 
+DAY 05:<br>
+NOTES: Methods, Operators.<br>
+HACKERRANK: Java int to String, Java Date and Time, Java concurrency Formatter.<br>
+
