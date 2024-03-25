@@ -23,3 +23,6 @@ DAY 05:<br>
 NOTES: Methods, Operators.<br>
 HACKERRANK: Java int to String, Java Date and Time, Java concurrency Formatter.<br>
 
+DAY 06:<br>
+NOTES: Control Statements.<br>
+HACKERRANK: Java String introduction<br>
