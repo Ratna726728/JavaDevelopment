@@ -26,3 +26,9 @@ HACKERRANK: Java int to String, Java Date and Time, Java concurrency Formatter.<
 DAY 06:<br>
 NOTES: Control Statements.<br>
 HACKERRANK: Java String introduction<br>
+
+DAY 07:<br>
+NOTES: Access Specifier, package, scanner class<br>
+HACKERRANK: Java Substring<br>
+
+
