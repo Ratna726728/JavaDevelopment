@@ -1,0 +1,81 @@
+Access Specifier:
+
+Access Specifier’s plays very important role while performing the operation 
+on variables, methods, classes, etc.
+
+Access Specifier’s also known as Access Modifiers.
+
+They are simply used to restrict the access.
+
+There are many non-access modifiers, such as static, abstract, synchronized, 
+native, volatile, transient, etc.
+
+All access modifiers are keywords.
+
+There are 4 types of access specifier’s as:
+1. private
+2. default
+3. protected
+4. public
+
+1. private:
+
+It apply to global variable, method, constructor and inner class only.
+
+Outer class can not be private.
+
+It can access within the class only not outside class or outside package as scope is very limited.
+
+Local variables cannot be private.
+
+2. default:
+
+It apply to global variable, local variable, constructors, method, inner class and outer class.
+
+It can accessible within the same package only.
+
+When the access specified is not specified then it will be treated as default members.
+
+No need to use keyword default like private.
+
+
+3. protected:
+
+It apply to constructor, global variables, inner class and methods.
+
+It cannot apply to local variables and outer class.
+
+It is accessible within the same package and also possible into another package if 
+inheritance is  happened while calling.
+
+
+4. public:
+
+It apply to class, method, constructor, global variable, static variable, 
+inner class, outer class.
+
+It can access anywhere in the class or outside the class or same package or 
+different package.
+
+Local variables cannot public because they have limited scope within the method only. 
+If we make it public then getting error only. “illegal modifier for parameter”.
+
+
+NOTE : We can apply default access specifiers or final on local variable.
+
+
+--------------------------------------------------------------------------------
+|Access Modifier|Within class|within package|outside package by|Outside package|
+|               |            |              |subclass only     |               |
+--------------------------------------------------------------------------------
+| private       |     Y      |     N        |       N          |      N        |
+--------------------------------------------------------------------------------
+| default       |     Y      |     Y        |       N          |      N        |
+--------------------------------------------------------------------------------
+| protected     |     Y      |     Y        |       Y          |      N        |
+--------------------------------------------------------------------------------
+| public        |     Y      |     Y        |       Y          |      Y        |
+--------------------------------------------------------------------------------
+
+
+

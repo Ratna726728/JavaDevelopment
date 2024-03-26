@@ -1,0 +1,46 @@
+Package
+
+Package is nothing but collection of classes and interfaces that works together.
+
+Package in java can be categorized in two form, built-in package and user-defined package.
+
+There are many built-in packages such as java, lang, awt, javax, swing, net, io, util, sql etc.
+
+User-defined package or custom package is the package which is created by user.
+
+Why we use package?
+
+We can easily access the code and use the code anywhere in 
+network.(local folder directory network).
+
+Advantages :
+
+1. Reusability – we can place the common code into one folder and reuse it.
+2. Java package is used to categorize the classes and interfaces so that they 
+   can be easily maintained.
+3. Java package provides access protection.
+4. Java package removes naming collision.
+
+Syntax :
+
+package package_name;
+
+Example:
+com.amdocs.iciciprudential.insurance.maintenance
+
+Here in above example,
+Package are generally starts with the com folder.
+amdocs is your company name.
+iciciprudential is your client name.
+insurance is your project name.
+maintenance is your module name
+
+Note: All alphabets are starts with small case letters only.
+
+ 
+IMPORT:
+
+When we use one class within another class in different packages then go for import statement.
+
+Example- suppose we have two different classes Test and Sample in different packages.
+

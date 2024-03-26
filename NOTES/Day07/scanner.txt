@@ -1,0 +1,16 @@
+Scanner:
+
+Scanner is a class in java.util package used for obtaining the input of the 
+primitive types like int, double, etc. and strings.
+
+It is the  easiest way to read input in a java program.
+
+To create  an object of scanner class, we usually pass the predefined object System.in.
+
+To read Numerical values of a certain data type, the method to use is nextXYZ().
+
+To read strings, we use nextLine() or next().
+
+https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html
+
+
