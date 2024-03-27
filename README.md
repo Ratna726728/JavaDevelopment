@@ -31,4 +31,6 @@ DAY 07:<br>
 NOTES: Access Specifier, package, scanner class<br>
 HACKERRANK: Java Substring<br>
 
-
+DAY 08:<br>
+NOTES: Static Keyword<br>
+HACKERRANK: Java substring comparision<br>
