@@ -1,4 +1,4 @@
-Stattic Keyword:
+Static Keyword:
 
 It is used for memory management.
 
