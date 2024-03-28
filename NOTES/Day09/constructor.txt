@@ -1,0 +1,153 @@
+CONSTRUCTOR:
+
+Constructor name is same as class name.
+
+It is invoked by JVM automatically when you create the object of class.
+
+It does not return anything even void also. A constructor is a block of codes similar to the method.
+
+At the time of calling constructor, memory for the object is allocated in the memory.
+
+It is a special type of method which is used to initialize the object. Every time an object is created 
+using the new keyword, at least one constructor is called.
+
+It calls a default constructor if there is no constructor available in the class. In such case, Java compiler 
+provides a default constructor by default.
+
+Note: It is called constructor because it constructs the values at the time of object creation. It is not necessary
+to write a constructor for a class. It is because java compiler creates a default constructor if 
+your class doesn't have any.
+
+
+#RULES for creating the constructor:
+
+Constructor name must be the same as its class name
+
+A Constructor must have no explicit return type
+
+A Java constructor cannot be abstract, static, final, and synchronized
+
+Note: We can use access modifiers while declaring a constructor. It controls the object creation. 
+In other words, we can have private, protected, public or default constructor in Java.
+
+There are two types of constructors:
+1. Default constructor(No-argument constructor)
+2. Parameterized constructor
+
+
+1. Default constructor:
+A constructor that does not accept any arguments called as default constructors.
+
+Rule: If there is no constructor in a class, compiler automatically creates a default constructor.
+
+The default constructor is used to provide the default values to the object like 0, null, etc., depending on the type.
+
+--------------------                             --------------------
+|                  |                             |                  |
+|  class Test{     |         ------------        |    class Test{   |
+|                  |         |          |        |                  |
+|                  |   --->  | COMPILER |   ---> |    Test(){}      |
+|  }               |         |          |        |                  |
+|                  |         ------------        |    }             |
+|                  |                             |                  |
+--------------------                             --------------------
+
+CODE:
+public class Test{
+
+      String name;
+      public Test(){
+            name= “Ram”;
+      }
+
+      public static void main(String []args){
+                  Test test = new Test();
+                  System.out.println(“Name is >>” + test.name);
+      }
+}
+Output:
+Name is>> Ram
+
+
+2. Parameterized constructor:
+
+A constructor with arguments called as parameterized constructor.
+
+The parameterized constructor is used to provide different values to distinct objects. However, 
+you can provide the same values also.
+
+CODE:
+public class Test{
+       int id;
+       String name;
+       String city;
+       public Test( int userID, String userName, String userCity){
+                id= userID;
+                name= userName;
+                city= userCity;
+                System.out.println(“id>>”+id);
+                 System.out.println(“name>>”+name);
+                 System.out.println(“city>>”+city);
+       }
+       public static void main(String []args){
+                 Test test = new Test(10, “Ram”, “Jabalpur”);
+       }
+}
+
+OUTPUT:
+id>> 10
+name>> Ram
+city>> jabalpur
+
+
+
+#What is the use of constructor?
+
+If you want to execute some code at object creation. In other words, it is used for generally initialization 
+of global variables.
+
+There are five ways to calling the constructor as:
+
+1. Test test = new Test();
+2. super();
+3. this();
+4. new Test();
+5. class.forName(“com.test”).newInstance();
+
+Constructor can be overloaded because we can write same name with different arguments. 
+
+NOTES:
+Constructor cannot be overridden because we can’t write multiple constructors with same arguments. 
+If you tried to write it then you will get compiler time error “Duplicate method Employee”.
+
+Private constructors mostly used in singleton design pattern in java.
+
+
+
+#Java copy constructor:
+
+There is no copy constructor in Java. However, we can copy the values from one object to another like copy constructor in C++.
+
+There are many ways to copy the values of one object into another in Java. They are:
+
+1. By constructor
+2. By assigning the values of one object into another
+3. By clone() method of Object class
+
+#Q and A:
+
+Q) Does constructor return any value?
+Yes, it is the current class instance (You cannot use return type yet it returns a value).
+
+Q) Can constructor perform other tasks instead of initialization?
+Yes, like object creation, starting a thread, calling a method, etc. You can perform any operation in the 
+constructor as you perform in the method.
+
+Q) Is there Constructor class in Java?
+Yes
+
+Q) What is the purpose of Constructor class?
+Java provides a Constructor class which can be used to get the internal information of a constructor in the class. 
+It is found in the java.lang.reflect package.
+
+
