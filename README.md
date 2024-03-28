@@ -34,3 +34,7 @@ HACKERRANK: Java Substring<br>
 DAY 08:<br>
 NOTES: Static Keyword<br>
 HACKERRANK: Java substring comparision<br>
+
+DAY 09:<br>
+NOTES: constructor<br>
+HACKERRANK: Java String reverse<br>
