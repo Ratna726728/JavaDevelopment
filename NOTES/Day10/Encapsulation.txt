@@ -1,0 +1,40 @@
+Encapsulation:
+
+The binding of data into a single entity called as Encapsulation.
+
+For Example, class is entity which contains variables and methods.
+
+class Employee{
+	int id;
+	int salary;
+	void x1(){
+	}
+}
+
+Here Employee class is entity and id, salary, x1() is data.
+
+For example, a capsule, it is wrapped with different medicines.
+
+A java class is the example of encapsulation. Java bean is the fully encapsulated class 
+because all the data members are private here.
+
+# Right Hand rule for encapsulation is, Always keeps global variables private and allows 
+other to assign values through public methods.
+
+
+## Real time Example!!!!!
+
+Suppose you have an account in the bank account. If your balance variable is declared as a 
+public variable in the bank software, your account balance will be known as public. 
+In this case, anyone can know your account balance. So, is it correct approach? Answer is NO.
+
+So, They declare balance variable as private for making your account safe, so that anyone cannot
+see your account balance.
+
+The person who has to see his account balance, will have to access only private members through 
+public methods defined inside that class.
+
+Thus, we can achieve security by utilizing the concept of data hiding. 
+This is called Encapsulation in java.
+
+IMG:(Encapsulation.jpg)
