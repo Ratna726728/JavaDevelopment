@@ -38,3 +38,7 @@ HACKERRANK: Java substring comparision<br>
 DAY 09:<br>
 NOTES: constructor<br>
 HACKERRANK: Java String reverse<br>
+
+DAY 10:<br>
+NOTES: Object Oriented Programming, Encapsulation <br>
+HACKERRANK: Java Anagrams<br>
