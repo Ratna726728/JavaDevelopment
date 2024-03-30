@@ -1,0 +1,142 @@
+Inheritance:
+
+The process of creating the new class(sub class) by using the existing 
+class(super class) functionality called as inheritance.
+
+It is the mechanism in which one class acquires the property of another class.
+
+Inheritance represents the IS-A relationship which is also known as a 
+parent-child relationship.
+
+Inheritance means simply reusability.
+
+All the parent members are derived into child class but they are depending upon
+the below condition as
+1. To check the access specifiers
+2. Members does not exists into sub class.
+
+Example of IS-A relationship:
+class Policy{      //parent class
+}
+class TermPolicy extends Policy{             //child class
+}
+
+Here in this example, Policy is super class and TermPolicy is sub class
+Where TermPolicy IS A Policy
+
+
+Why to use inheritance and what is the business requirement?
+
+
+Suppose we have one class which contain the fields like firstname, lastname, address, 
+city, mobile number. In future, we got the requirement to add the email then what 
+option we have below-
+
+Modify the attributes/fields/variables in existing class but this is not good 
+option it will increase the testing for that class.
+
+Add the attributes/fields/variables in the new class, this is the good option we c
+an also reduce the testing efforts for this.
+
+
+Flow of inheritance:
+
+The diagram shows the flow of inheritance. By looking to diagram we can say that,
+Class A is the parent class and class B is the child class.
+
+Note- Below are different names for super and sub class.
+
+Super class <--> Parent class <--> Base class <--> Old class
+
+Sub class <--> Child class <--> Derived class <--> New class.
+
+
+# important points to note:
+
+Inherit the classes by using extends keywords.
+
+Whenever we create the object of subclass then all the member will get called 
+super class as well as sub class. Because reason is that super class members 
+automatically inherited into sub class that’s why.
+
+Why we use inheritance that is for code reusability, reusability means we can 
+reuse existing class features such as variables and methods, etc.
+
+We can not extend the final class.
+
+We cannot assign parent class to child class- it means Child c = new Parent(); 
+Here we can’t write new  Parent();
+
+All the members of super class will be directly inherited into sub class and 
+they are eligible and depends on access specifiers only.
+
+
+
+# The concept of dynamic dispatching:
+
+
+The process of assigning the child class reference to parent class called 
+as “Dynamic Dispatch”.
+
+Example-
+class X{
+}
+class Y extends X {
+}
+
+class Test{
+public static void main(String [] args){
+X x = new Y();
+}
+
+# Different types of Inheritance
+
+There are 5 types of inheritance in java, listed as below:
+1. Single Inheritance
+2. Multilevel Inheritance
+3. Hierarchical Inheritance
+4. Multiple Inheritance *
+5. Hybrid Inheritance *
+
+In the 5 types of some of inheritance are achievable and some are not depending 
+on the class or interface.
+
+Single, Multilevel, Hierarchical inheritance are the type of inheritance which 
+are achievable in java.(for class)
+
+Multiple, Hybrid Inheritance are the type of inheritance which aren’t 
+achievable in java. 
+
+This type create ambiguity to JVM while executing the code and create
+an exception.(for class)
+
+1. Single Inheritance
+
+In this only one super class and only one sub class called as single.
+
+
+2. Multilevel Inheritance
+
+It has only one base class and multiple derived class called as multilevel. 
+Or it refers to the concept of one class extending (or inherits) more than 
+one base class.
+
+3. Hierarchical Inheritance
+
+One class is inherited by many sub classes called as Hierarchical Inheritance.
+
+
+4. Multiple Inheritance 
+
+One sub class has many super classes  called as multiple inheritance.
+
+This is not achievable in java because, if we extends multiple super classes 
+in sub class it will throw a compile time error.
+
+5. Hybrid Inheritance
+
+It is the combination of single (Hirarchical)and multiple inheritance. 
+So it is not allowed in java.
+
+
+
