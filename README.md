@@ -47,3 +47,6 @@ DAY 11:<br>
 NOTES: Inheritance<br>
 HACKERRANK: Java String Token<br>
 
+DAY 12: <br>
+NOTES: Polymorphism<br>
+HACKERRANK: Java Regex<br>
