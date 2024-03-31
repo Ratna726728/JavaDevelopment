@@ -1,0 +1,73 @@
+Polymorphism:
+
+One entity that behaves differently in different cases called as polymorphism.
+
+Polymorphism is derived from 2 Greek words: poly and morphs. The word "poly" means many and "morphs" 
+means forms. So polymorphism means many forms.
+ 
+There are two types of polymorphism in Java: compile-time polymorphism and runtime polymorphism. 
+We can perform polymorphism in java by method overloading and method overriding.
+
+Example-
+1. Light button, we are using that button to turn on or off the lights.
+
+2. A person acts as a employee in the office, a customer in the shopping mall, a passenger in bus/train, 
+a student in school, and a son at  home.
+
+3. Smartphone is entity that behaves different such as text message, calling, send mail, video call, etc.
+
+We can achieve polymorphism by using two ways.
+1. Method overloading 
+2. Method overriding
+
+
+1. Method Overloading
+
+It is the same method name different argument called as Method overloading. 
+
+There is no need of super and sub class relationship. 
+
+It is called early binding, compile time polymorphism or static binding.
+
+It is called for compile time polymorphism, because it is decided at compile time which one method 
+should get called that's why.
+ 
+Rules for method overloading-
+ 
+1. Method name must be same.
+2. Parameter or argument must be different.
+3. Return type is anything.
+4. Access specifier is anything.
+
+
+2. Method Overriding 
+
+It is the same method name with same argument called as method overriding.
+
+There is need of super and sub relationship.
+
+It is called as late binding, run time polymorphism or dynamic binding, dynamic method dispatch, etc.
+ 
+Rules for method overriding-
+ 
+1. Method name must be same.
+2. Return type must be same or different.
+3. Access specifier is anything.
+4. Parameters must be same.
+ 
+# Why we use method overriding?
+Maintainability.
+Readability of code.
+
+Note- we can extend the method scope in overriding but not reduce the visibility of it.
+
+Note- why we need to write the sub class?
+1. to add the new features 
+2. to inherit the existing functionality
+
+Subclass method's access modifiers must be the same or higher than the superclass method access modifier.
+
+ 
+
+
+
