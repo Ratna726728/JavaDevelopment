@@ -50,3 +50,8 @@ HACKERRANK: Java String Token<br>
 DAY 12: <br>
 NOTES: Polymorphism<br>
 HACKERRANK: Java Regex<br>
+
+DAY 13:<br>
+NOTES: Abstraction<br>
+HACKERRANK: Pattern Syntax checker<br>
+
