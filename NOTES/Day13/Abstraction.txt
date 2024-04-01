@@ -1,0 +1,133 @@
+Abstraction:
+
+It is the process of hiding the some details and showing the important 
+information to the end user called as Abstraction.
+
+Abstraction lets you focus on what the object does instead of how it does it.
+
+In more Technical Terms, Abstraction is a process of hiding the implementation 
+details and showing only functionality to the user.
+
+Example for Abstraction-
+1]Car
+2]ATM Machine
+3]TV remote
+
+There are two ways to achieve the abstraction in java.
+1. Abstract class
+2. Interface
+
+
+1. Abstract class
+
+Abstract class have constructor.
+
+It contains abstract methods or concrete methods or empty class or combination 
+of both methods.
+
+We cannot create the object of abstract class.
+
+To use abstract method of class, we should extends the abstract class and use 
+that methods.
+
+If we don’t want  to implement or override that method, make that class as abstract.
+
+If any method is abstract in a class then that class must be declared as abstract.
+
+Note- Multiple inheritance are not allowed in  abstract class but allowed in 
+interfaces.
+ 
+To implement abstract methods, We need to create the class which extends from 
+abstract class.
+
+Note- Suppose in the sub class, I don’t want to override the abstract methods then 
+make that subclass as abstract. 
+
+
+2. Interface
+
+It contain public abstract methods and public static final variables by default.
+
+We must follow I to C design principle in java. It means every class should be 
+implemented by some interfaces.
+
+In company, Senior software engineer or team lead or manager level people can 
+design the interface then give it to developer, then developer will implement it 
+by writing the business logic into it.
+
+We cannot create the object of interface.
+
+In interface, we can just define the method only but implemented those methods 
+into implemented class.
+
+Before 1.7, Interface does not have any method body.
+
+In 1.8, Declare the default & static method with body in interface.
+
+In 1.9 we can define the private methods in interface also.
+
+Java supports multiple inheritance in the terms of interfaces but not classes.
+
+Interface does not have constructor.
+
+Note- If we don’t write public or abstract in interface then JVM will insert it 
+automatically.
+
+Below are the possible scenario regarding the interface.
+
+Interface can extend interface1 and interface2
+
+Interface can extends interface.
+
+Interface can extends the multiple interface
+
+Class extends class implements interface
+
+Class implements interface
+
+Class extends class implements interface1 and interface2
+
+
+#Real world example-
+
+Suppose there is a requirement for amazon to integrate SBI bank code into their 
+shopping cart. Their customer want to make payment for products they purchased .
+
+Lets say SBI develops code like below:
+
+Class Transaction{
+	Void withdrawAmt(int amtToWithdraw){
+		//logic of withdraw
+		//SBI DB connection and Updating in their DB
+	}	
+}
+
+Amazon needs this class so they request SBI bank for the same. The problem with 
+SBI bank for the same. The problem with SBI is that if they give this complete 
+code to amazon they risk exposing everything of their own database to then as 
+well as their logic, which cause a security violation.
+
+Now the solution is for SBI to develop an interface of transaction class as 
+shown below:
+
+Interface Transaction{
+	Void withdrawAmt(int amtToWithdraw);
+}
+
+Class TransationImpl implements Transaction{
+	Void withdrawAmt(int amtToWithdraw){
+		//logic to withdraw
+		//SBI DB connection and updating in their DB
+	}
+}
+
+
+Now how amazon will do this as below as-
+Transation t = new TransactionImpl();
+t.withdrawAmt(500);
+
+
+In this case, both application can achieve their aims.
+
+
+
