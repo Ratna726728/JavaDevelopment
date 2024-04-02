@@ -55,3 +55,8 @@ DAY 13:<br>
 NOTES: Abstraction<br>
 HACKERRANK: Pattern Syntax checker<br>
 
+DAY 14:<br>
+NOTES: Object Oriented Design<br>
+HACKERRANK: Java Regex 2 - Duplicate Words<br>
+
+
