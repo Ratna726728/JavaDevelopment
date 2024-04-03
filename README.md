@@ -59,4 +59,8 @@ DAY 14:<br>
 NOTES: Object Oriented Design<br>
 HACKERRANK: Java Regex 2 - Duplicate Words<br>
 
+DAY 15:<br>
+NOTES: Object class <br>
+HACKERRANK: Valid Username Regular Expression<br>
+
 
