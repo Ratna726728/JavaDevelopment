@@ -63,4 +63,7 @@ DAY 15:<br>
 NOTES: Object class <br>
 HACKERRANK: Valid Username Regular Expression<br>
 
+DAY 16:<br>
+NOTES: Wrapper class<br>
+HACKERRANK: Tag Content Extractor<br>
 
