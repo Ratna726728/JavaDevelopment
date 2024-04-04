@@ -1,0 +1,49 @@
+WRAPPER CLASS:
+
+It provides the mechanism to convert primitive’s data type into object and object into primitives 
+data type called as Wrapper class.
+
+There are two types of process in wrapper class as follows:
+
+1. Autoboxing
+2. Unboxing
+
+
+There are 8 classes of java.lang package are known as wrapper classes in java.
+Integer
+Short
+Byte
+Long
+Double
+Character
+Boolean
+Float
+
+
+1. Autoboxing – The process of converting primitive’s data type into object.
+
+public class Autoboxing{
+	public static void main(String[] args){
+
+	int a = 20;
+
+	Integer i = new Integer(a); //autoboxing
+	System.out.println(" i : "+ i);
+	}
+}
+
+
+2. Unboxing- The process of converting object into primitive’s data type.
+
+public class Unboxing{
+        public static void main(String[] args){
+
+        int a = 20;
+
+        Integer i = new Integer(a); //autoboxing
+        System.out.println(" i : "+ i);
+
+	int b = i.intValue(); //unboxing
+	System.out.println(" b : "+ b);
+        }
+}
