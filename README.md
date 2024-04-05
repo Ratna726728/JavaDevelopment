@@ -67,3 +67,7 @@ DAY 16:<br>
 NOTES: Wrapper class<br>
 HACKERRANK: Tag Content Extractor<br>
 
+DAY 17:<br>
+NOTES: Final keyword<br>
+HACKERRANK: Java BigNumber<br>
+
