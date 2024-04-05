@@ -1,0 +1,57 @@
+FINAL KEYWORD:
+
+It is a keyword which is applicable for variables, methods and classes.
+
+The final keyword can be applied with the variables, a final variable that have no value it 
+is called blank final variable or uninitialized final variable.
+
+It can be initialized in the constructor only.
+
+The blank final variable can be static also which will be initialized in the static block only.
+
+IMG:(final.jpg)
+
+
+
+1. Final Variable
+
+A variable  which is declared with final keyword called as final variables.
+
+Once you assigned any value to that variables then it won’t be changed.
+
+It works like a constants in java.
+
+How to declare final variable?
+
+final <data_type> <variable_name> = <value>;
+
+Example, final int a =10;
+
+
+
+2. Final method
+
+Method which is defined with final keyword called as final method.
+
+#How to declare final method?
+
+public final void add(){
+	//method body;
+}
+
+Note- Final method cannot be overridden.
+
+
+
+3. Final Class
+
+The class which is defined with final keyword called as final class.
+
+# How to declare the final class?
+
+public final class test{
+
+}
+
+Note- we can stop others to inherit our class by making class as a final.
+
