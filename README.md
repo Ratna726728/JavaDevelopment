@@ -71,3 +71,7 @@ DAY 17:<br>
 NOTES: Final keyword<br>
 HACKERRANK: Java BigNumber<br>
 
+DAY 18:<br>
+NOTES: This keyword, Super Keyword<br>
+HACKERRANK: Java Primality Test<br>
+
