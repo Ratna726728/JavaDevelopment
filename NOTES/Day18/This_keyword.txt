@@ -1,0 +1,53 @@
+THIS KEYWORD:
+
+It is used to refer current class variables, method and constructor.
+
+There can be a lot of usage of Java this keyword. In Java, this is a reference variable that refers to the current object.
+
+Usage of Java this keyword
+Here is given the 6 usage of java this keyword.
+
+1. this can be used to refer current class instance variable.
+2. this can be used to invoke current class method (implicitly)
+3. this() can be used to invoke current class constructor.
+4. this can be passed as an argument in the method call.
+5. this can be passed as argument in the constructor call.
+6. this can be used to return the current class instance from the method.
+
+IMG: (this.jpg)
+Let’s see a coding example based on this.
+
+public class Parent{
+
+	int x = 20;
+}
+
+public class Child extends Parent{
+
+	int x = 25;
+	void test(){
+		int x = 30;
+
+		Child c = new Child();
+
+		//Scenario - 1
+		System.out.println("By creating Objects=" + c.x);
+		
+		//Scenario - 2
+		System.out.println("By using this keyword=" this.x);
+	}
+
+}
+
+
+public class TestMain{
+	public static void main(String[] args){
+		Child c = new Child();
+		c.test();
+	}
+}
+
+OUTPUT:
+
+By creating Objects=25
+By using this keyword=25

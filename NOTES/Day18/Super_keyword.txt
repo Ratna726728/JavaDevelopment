@@ -1,0 +1,50 @@
+SUPER KEYWORD:
+
+
+It is used to refer immediate parent class variables, method and constructor.
+
+Whenever you create the instance of subclass, an instance of parent class is created implicitly which is referred by super 
+reference variable.
+
+Why we use Super keyword?
+
+Scenario 1: We are calling the x variable of parent class for that purpose we loading the whole class that is not good 
+programmer approach. For user of single variable, we should go for super keyword in  java.
+
+Scenario 2: We are trying to print the x variable of immediate super class by using the super keyword that is the best 
+approach because we are not wasting the memory here.
+
+Let's see an example for this:
+
+public class Parent{
+	int x = 20;
+}
+
+public class Child extends Parent{
+
+	int x = 25;
+	public void test(){
+		int x = 30;
+
+		//scenario -1
+		Parent p = new Parent();
+		System.out.println("parent class x Variable="+p.x);
+
+		//scenario -2
+		System.out.println("Immediate super class of child class x variable=" + super.x);
+	}
+}
+
+public class TestMain{
+	public static void main(String[] args){
+
+		Child c = new Child();
+		c.test();
+	}
+}
+
+OUTPUT:
+parent class x Variable=20
+Immediate super class of child class x variable=20
+
+
