@@ -75,3 +75,7 @@ DAY 18:<br>
 NOTES: This keyword, Super Keyword<br>
 HACKERRANK: Java Primality Test<br>
 
+DAY 19:<br>
+NOTES: Industry level approach for writing Method and constructor<br>
+HACKERRANK: Java BigInteger<br>
+
