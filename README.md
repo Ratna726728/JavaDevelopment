@@ -79,3 +79,7 @@ DAY 19:<br>
 NOTES: Industry level approach for writing Method and constructor<br>
 HACKERRANK: Java BigInteger<br>
 
+DAY 20:<br>
+NOTES: Exception handling-1<br>
+HACKERRANK: Java 1D Array <br>
+
