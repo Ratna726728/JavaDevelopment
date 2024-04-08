@@ -1,0 +1,213 @@
+EXCEPTION HANDLING:
+
+#What is exception?
+
+Exception is an abnormal condition that occurs during execution of program to stop the entire flow of 
+application called as Exception.
+
+If an exception occurs during the execution of program, the moment the exception occurs in flow of 
+program the program stops at that instant.
+
+For an example:
+
+Public class Test{
+	public static void main(String[] args){
+		System.out.println(“Hi”);
+		System.out.println(“Java”);
+		int a=10/0;
+		System.out.println(“Execution”);
+	}
+}
+
+Output:
+Hi
+JavBOBa
+Java.lang.ArithmeticException: / by zero
+
+# Hirarchy of Java Exception:
+(IMG: Hierarchy chart.jpg)
+
+# Throwable:
+
+In the above given hierarchy throwable is a class which is at the top of the exception hierarchy, 
+from which all exception classes are derived.
+
+It is the super class of all Exception in java.
+
+Both Exception and errors are java classes which  are derived from the throwable class.
+
+
+# Error:
+
+Error is subclass of throwable class.
+
+Errors are mostly the abnormal conditions.
+
+Error does not occur because of the programmer’s mistake, but when system is not working properly or 
+a resource is not allowed properly.
+
+Memory out of bound Exception, stack overflow, etc. are the example of errors.
+
+
+There are two types of exceptions Checked and Unchecked Exceptions
+
+# Checked Exceptions:
+
+The classes which directly inherit from throwable class except RuntimeException and error are known 
+as checked exception.
+
+Checked exception are checked at compile time.
+
+Example- IOException, SQLExcaption
+
+# Unchecked Exceptions:
+
+The class which inherit from RuntimeException are known as unchecked exception.
+
+Unchecked exceptions are not checked at compile-time, but they are checked at runtime.
+
+Example -  NullPointerException, ArithmeticException, etc.
+
+
+
+# IOException: It is thrown when an input-output operation failed or interrupted
+
+# ClassNotFoundException: This Exception is raised when we try to access a class whose definition is not found
+
+# RuntimeException: This represents an exception that occurs during runtime.
+
+# ArithmeticException: It is thrown when an exceptional condition has occurred in an arithmetic 
+operation.
+
+# ArrayIndexOutOfBoundsException: It is thrown to indicate that an array has been accessed with an 
+illegal index. The index is either negative or greater than or equal to the size of the array.
+
+# NullPointerException: This exception is raised when referring to the members of a null object. 
+OOANull represents nothing
+
+# StringIndexOutOfBoundsException: It is thrown by String class methods to indicate that an index is 
+either negative or greater than the size of the string
+
+# SQLException: This exception occurs when we use wrong SQL in java.
+
+# NumberFormatException: This exception is raised when a method could not convert a string into a 
+numeric format.
+
+
+# How do we handle Exception in java?
+
+In java we use try and catch block to handle exception and maintain the continuous flow of program.
+
+The code which is faulty we keep that line of code in try block and if the code is creating exception 
+then it is handled by catch block.
+
+Catch block will act as we give the login to handle the exception.
+
+Example:
+Public class Test{
+	public static void main(String[] args){
+		System.out.println(“Hi”);
+		System.out.println(“Java”);
+		try{
+			int a=10/0;
+		} catch(Exception e){
+			System.out.println(e);
+		} 
+		System.out.println(“Execution”);
+	}
+}
+
+OUTPUT:
+Hi
+Java
+Java.lang.ArithmeticException: / by zero
+Execution
+
+# Possible ways to write try catch block:
+
+1] Only Try block - NOT ALLOWED
+
+try{
+	//NOT ALLOWED
+}
+It will throw a syntax error.
+
+2] try and catch block - ALLOWED
+
+BOBtry{
+	//allowed
+}catch(Exception e){
+
+}
+
+3] A try block with finally block. - ALLOWED
+
+try{
+	//allowed
+}finally{
+
+}
+
+
+
+4] A try block with catch and finally block - ALLOWED
+
+try{
+	//allowed
+}catch(Exception e){
+
+}finally{
+
+}
+
+5] A try block with two catch blocks with different arguments. - ALLOWED
+
+try{
+	//allowed
+}catch(ArithmeticException e1){//sub
+
+}catch(Exception e){//super
+
+}
+
+6] A try block with two catch blocks with exception hierarchy - NOT ALLOWED
+
+try{
+	//not allowed
+}catch(Exception e){
+
+}catch(ArithmeticException e1){
+
+}
+
+The bigger exception cannot be in the first catch because it will accomodate or handle all exceptions 
+and there will be no chance to reach the second catch.
+
+
+
+# FINALLY:
+
+The finally block is used when an important part of the code needs to be executed. It is always executed
+whether or not the exception are handled.
+
+* finally block will always get executed until we shutdown jvm . to shutdown jvm in java we call
+System.exit(). If you write this in try block in that case finally block will not be executed.
+
+* Normally, finally block contains the code to release resource like DB connections, IO streams, etc.
+
+
+DIFFERENCE BETWEEN CATCH BLOCK AND FINALLY BLOCK:
+---------------------------------------------------------------------------------------------------------
+|                         CATCH                        |                       FINALLY                  |
+|------------------------------------------------------|------------------------------------------------|
+|Catch block handles the error when it occurs in try   | There is no need of exeception thrown by try   |
+|block.                                                | block.                                         |
+|------------------------------------------------------|------------------------------------------------|
+|Catch block is executed only when the if exception is | Finally block is always executed whether       |
+|thrown by try block, otherwise it is not executed.    | exception occurs or not.                       |
+|------------------------------------------------------|------------------------------------------------|
+|We can use multiple catch block for only one try block|Only one finally block is used for one try block|
+|------------------------------------------------------|------------------------------------------------|
+|We can handle multiple exceptions by using catch block| It is not for exeception handling              |
+---------------------------------------------------------------------------------------------------------
+
