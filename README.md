@@ -83,3 +83,8 @@ DAY 20:<br>
 NOTES: Exception handling-1<br>
 HACKERRANK: Java 1D Array <br>
 
+DAY 21:<br>
+NOTES: Exception handling-2<br>
+HACKERRANK: Java 2D Array<br>
+
+
