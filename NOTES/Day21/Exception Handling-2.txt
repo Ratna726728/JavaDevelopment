@@ -1,0 +1,73 @@
+EXCEPTION HANDLING-2:
+
+#Throw and Throws:
+
+# Throw:
+
+- The throw keyword is used to trasfer the exception to someone else.
+
+- Example: 
+throw new ArithmeticException();
+
+#Throws:
+
+- Throws keyword is used to declare the exception with method.
+
+-Example:
+
+void x1() throws IOException{
+	x2();
+}
+
+#HOW TO CREATE A CUSTOM EXCEPTION IN JAVA:
+
+We can create our own exception that is known as custom exception or user defined exception.
+
+By the help of custom exception, you can have your own exception and message.
+
+
+Scenario - 1:
+Sometimes it is required to develop meaningful exceptions based on application requirements.
+for example suppose you have one savings account in SBI bank and you have 50000 in you account.
+Suppose you attempted to withdraw 60000 from you account. In java you can handle, you need to display some error message
+related to insufficient fund.
+
+Steps to create custom exception:
+
+1. Create a new class.
+
+2. The user defined exception class must extend from java.lang.Exception or java.lang.RunTimeException class.
+
+3. While  creating custom exception, prefer to create an unchecked exception, runtime exception than a checked exception.
+
+4. Every user defined exception class in which parametrized constrctor must called parametrized constructor of either 
+java.lang.Exception or java.lang.RunTimeException class by using super (String parameter always).
+
+
+
+#JAVA EXCEPTION PROPAGATION:
+
+An Exception is first thrown from the top of the stack and if not caught , it drops down the call stack to the previous 
+method. If not caught there, the exception again drops down to the previous method, and so on until they are caught or until 
+they reach the very bottom of the call stack.
+
+
+==> By default, unchecked exceptions are forwarded in calling chain(propagated).
+
+==> By default, checked exceptions are not forwarded in calling chain(propagated).
+
+
+#EXCEPTION HANDLING WITH METHOD OVERRIDING:
+
+There are many rules if we talk about method overriding with exception handling.
+
+1] If superclass method does not declare an exception:
+
+if superclass method does not declare an exception, subclass overridden method cannot declare the checked exception
+but it can declare unchecked exception.
+
+2] If superclass method declares on exception:
+
+Subclass overridden method can declare same, subclass exception or no exception but cannot declare parent exception.
+
+
