@@ -87,4 +87,9 @@ DAY 21:<br>
 NOTES: Exception handling-2<br>
 HACKERRANK: Java 2D Array<br>
 
+DAY 22:<br>
+NOTES: Input and Output Stream in java<br>
+HACKERRANK: Java Subarray<br>
+
+
 
