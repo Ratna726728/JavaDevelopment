@@ -91,5 +91,7 @@ DAY 22:<br>
 NOTES: Input and Output Stream in java<br>
 HACKERRANK: Java Subarray<br>
 
-
+DAY 23:<br>
+NOTES: Serialization<br>
+HACKERRANK: Java Arraylist<br>
 
