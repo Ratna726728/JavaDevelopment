@@ -1,0 +1,38 @@
+SERIALIZATION:
+
+The process of storing the state of objects into file called as Serialization and process of reading the state of objects from
+file is called as Deserialization.
+
+# How to implement serialization in java?
+
+By using input and ouput stream, we can do it.
+
+Example-1 Suppose I have one student class in which first name, last name and mobile number. I just want to store that into
+file name, Then go for serialization. FIND THE CODE IN DAY23>>com.serialize file.
+
+# Point to note:
+
+- The ObjectOutputStream and ObjectInputStream are used to serialize and deserialize objects respectively.
+
+- If we don't want to serialize some fields of class then we use the transient keyword. If any member is declared as 
+transient then it won't be serialized.
+
+- If the superclass implements serializable interface, then all it's subclasses will be serializable by default.
+
+- All static members of class are not serialized because static members are related to class only, not to object.
+
+- The serializarion associated with each serializable class has a version number called Serial Version UID.
+
+- It is used during de-serialization to verify that the sender and receiver of a serialized object have loaded classes for 
+that and are compatible with respect to serialization.
+
+- If the receiver is loaded with different version of a class that has different serial version UID's than the corresponding 
+sender's class, then deserialization will result in an invalid class Exception.
+
+- A serializable class can declare it's own serial version UID explicitly by declaring a field named serial version UID that
+must be static, final and of type long.
+
+- If a superclass variable is made transient, then after deserialization, it gives default value like zero or null.
+
+Example-2 Consider the above same program in which we don't want to serialize the salary of a student.
+FIND THE CODE IN DAY23>>com.serialize.transients file.
