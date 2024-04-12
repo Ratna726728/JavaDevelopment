@@ -1,0 +1,78 @@
+PROPERTIES FILE IN JAVA:
+
+Properties file is nothing but simple configuration file called as property file or it is the simple file
+with .properties extension and it contain key value formatted data.
+
+It uses java.util.properties package
+
+* why we use properties file?
+
+In standalone or web application, data is frequently changing  is like username, password, etc. So every time
+it is very difficult to modify in java that becomes very complex. So to overcome this problem, we should go
+for .properties file.
+
+Simple.properties
+username=crack
+password=pass123
+
+* How to use?
+Step 1: Create a method or you can write in main() method too.
+
+public void data(){
+
+}
+
+Step 2: Add a try and catch block in it
+
+try{
+
+}catch(Exception e){
+
+}
+
+Step 3: Inside try block create an object of FileInputStream, with location of properties file. Also, Import 
+        the java.io.FileInputStream package.
+
+try{
+	FileInputStream fis = new FileInputStream("location.properties");
+}
+
+Step 4: To locate properties create the object of properties in try block and import the  java.util.properties
+        package.
+
+Properties p = new Properties();
+
+using load() method take input from FileInputStream object and pass it to object of properties class.
+
+p.load(fileInputStream);
+
+Step 5: Using Object and  getproperty method we will get data from file.
+
+String name = p.getProperty("username");
+
+getProperty method requires key of desired value.
+
+username = Rohit
+--------   -----
+ key       value
+
+
+Step 6: Now print the data on console
+
+System.out.println("username = "+name);
+
+Step 7: In catch block write (Exception e)
+
+catch(Exception e){
+	e.printStackTrace();
+}
+
+Step 8: Inside main() method.
+
+create an object of class.
+
+Sample sample = new Sample();
+sample.data();
+
+
+COMPLETE CODE IN CODES/DAY24 section....
