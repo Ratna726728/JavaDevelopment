@@ -95,3 +95,7 @@ DAY 23:<br>
 NOTES: Serialization<br>
 HACKERRANK: Java Arraylist<br>
 
+DAY 24:<br>
+NOTES: Properties files in java<br>
+HACKERRANK: Java 1D Array (Part 2)<br>
+
