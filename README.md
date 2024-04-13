@@ -99,3 +99,7 @@ DAY 24:<br>
 NOTES: Properties files in java<br>
 HACKERRANK: Java 1D Array (Part 2)<br>
 
+DAY 25:<br>
+NOTES: Multithreading-1<br>
+HACKERRANK: Java list<br>
+
