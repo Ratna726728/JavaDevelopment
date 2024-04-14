@@ -103,3 +103,7 @@ DAY 25:<br>
 NOTES: Multithreading-1<br>
 HACKERRANK: Java list<br>
 
+DAY 26:<br>
+NOTES: Multithreading-2<br>
+HACKERRANK: Java Map<br>
+
