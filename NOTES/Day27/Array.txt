@@ -1,0 +1,123 @@
+ARRAY:
+
+- Array is a collection of similar type of elements which has contiguous memory location.
+- We can store only a fixed set of elements in a Java array.
+- Array in java is index-based, the first element of the array is stored at the 0th index, and 2nd element is stored on 1st
+index and so on.
+
+for more information on array(https://github.com/Ratna726728/DSA/tree/main/DSA) check Day07, 08, and 09 directories.
+
+SOME IMPORTANT POINT ON ARRAY:
+
+1. Size of array is equal to total elements present in array. for example if we have 10 elements in array then the 
+size of array is 10.
+
+2. From the above example, we understood how we can calculate the size of array, let's understand how to calculate indexes:
+
+consider, N is the size of array, the index will be N-1 because, it will start from 0th index.
+
+3. Array's always store it's value in a contiguous memory location on a memory.
+for example if memeory allows us to store value from 1002 memory address, then it will always store like 1002,1003,and so on.
+It will never save value in reverse order.
+
+- There are two types of arrays:
+1. Single dimension array.
+2. Multidimentional array.
+
+# Advantages of array:
+- Random Access: We can get any data located at an index position.
+
+- Code Optimization: It makes the code optimized, we can retrieve or sort the data efficiently.
+
+# Disadvantages of array:
+- Size limit: We can store only the fixed size of elements in the array. It doesn't grow it's size at runtime. To solve this
+problem, collection framework is used in java which grows automatically.
+
+# Syntax to declare an Array:
+1. dataType[] arr;
+2. dataType []arr;
+3. dataType arr[];
+
+# Instantiation of array in java:
+1. arrayRefVar = new dataType[size];
+
+int[] numbers = new int[5];
+
+where, 
+int = Type of array.
+[]  = Array symbole (required).
+new = new keyword to create a new array.
+[5] = Size of array.
+
+let's see a program to illustrate how to declare, instantiate, initialize an array with that traversing of an array.
+package com.testing;
+//program to illustrate how to declare, instantiate, initialize
+//an traverse array in Java array.
+public class TestArray {
+	public static void main(String[] args) {
+		//delare and instantiate an array
+		int arr[] = new int[5];
+
+		//initialization of an array
+		arr[0]=10;
+		arr[1]=20;
+		arr[2]=30;
+		arr[3]=40;
+		arr[4]=50;
+
+		//traversing of an array
+		for(int i = 0; i < arr.length ; i++) {
+			System.out.println(arr[i]);
+		}
+	}
+}
+
+
+2. We can declare, instantiate and initialize the java array together by:
+
+int arr[]={10,20,30};
+
+let's see a program for this,
+
+package com.testing;
+//program to illustrate the use of declaration, instantiation,
+//and initilization of a java array in single line.
+public class TestArray1 {
+	public static void main(String[] args) {
+		//declaration, instantiation, initialization
+		int arr[] = {10,20,30,40,50,60};
+
+		//traversing of a array
+		for(int i = 0; i < arr.length ; i++) {
+			System.out.println(arr[i]);
+		}
+	}
+}
+
+# For-Each loop:
+
+We can also print the java array using for-each loop. The java for-each loop prints the array elements one by one. It holds 
+an array element in a variable, then executes the body of the loop.
+
+The syntax of the for-each loop is given below:
+
+for(data_type variable : array){
+//body of the loop
+}
+
+let's see a program for this:
+
+package com.testing;
+
+public class TestArray2 {
+
+	public static void main(String[] args) {
+		int arr[] = {24,58,62,75,84,07};
+		//print using for each loop
+		for(int i : arr) {
+			System.out.println(i);
+		}
+	}
+}
+
+
