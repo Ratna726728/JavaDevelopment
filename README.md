@@ -107,3 +107,8 @@ DAY 26:<br>
 NOTES: Multithreading-2<br>
 HACKERRANK: Java Map<br>
 
+DAY 27:<br>
+NOTES: Array<br>
+HACKERRANK: Java Stack<br>
+
+
