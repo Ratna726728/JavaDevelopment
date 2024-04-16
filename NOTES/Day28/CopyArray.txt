@@ -1,0 +1,59 @@
+program to copy all elements of one array into another array.
+
+code>>()
+
+Explaination:
+
+Basically we have to replicate one array into other array. for the very purpose we have taken 2 arrays arr1[] and arr2[].
+both the arrays are of int data types. but arr1[] is already initialized and arr2[] is not, so we have to copy elements from
+arr1[] and put in the arr2[].
+
+1. Declaring, initializing and instantiate the arr1[] with {1,2,3,4,5} values.
+2. Declare an empty array with the same length on arr1[].
+     int arr2[]= new int[arr1.length];
+3. Create a for loop, which will take the values one by one, and this for loop will continue till arr1.length.
+     for(int i =0; i<arr1.length; i++)
+4. In for loop body store the elements in arr2 by using i index variable
+     arr2[i]= arr1[i];
+5. used two more for loop to print the values in arr1[] and arr2[] respectively.
+
+Iterations:
+
+Index = value
+0th   =  1
+1st   =  2
+2nd   =  3 
+3rd   =  4
+4th   =  5
+
+1] for loop for copying the elements from arr1[] to arr2[].
+1. when i =0; and i < 5 = true
+arr1[0]= 1
+arr2[0]=arr1[0]
+arr2[0]=1
+
+2. when i =1; and i < 5 = true
+arr1[1]= 2
+arr2[1]=arr1[1]
+arr2[1]=2
+
+3. when i =2; and i < 5 = true
+arr1[2]= 3
+arr2[2]=arr1[2]
+arr2[2]=3
+
+4. when i =3; and i < 5 = true
+arr1[3]= 4
+arr2[3]=arr1[3]
+arr2[3]= 4
+
+5. when i =4; and i < 5 = true
+arr1[4]= 5
+arr2[4]=arr1[4]
+arr2[4]=5
+
+6. when i =5; and i < 5 = false
+
+2] for loop for printing first array arr1[] elements
+
+3] for loop for printing second array arr2[] elements
