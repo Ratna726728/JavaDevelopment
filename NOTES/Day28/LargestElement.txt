@@ -1,0 +1,65 @@
+Program to finding the largest element in an array.
+
+code>>
+
+EXPLANATION:
+
+In the above mentioned code we have given an array arr[]. and this arr[] is of int data type means
+the values present in the array are integers.
+int arr[]={10,83,07,45,32,01};
+
+1. Declaring, instantiating and initialize the array arr[].
+2. Setting a variable element and initialize it with the value of index 0 i.e. 10.
+3. In a for loop setting int i =0 and range is upto the size of array, and incremented the value of i.
+4. In for loop we have if conditional statement which is checking the array of index i is greaeter than 
+   variable element which we setted before.
+5. and if the condition gets true then it enters in conditional block.
+6. in conditional block we set the element variable again to the specific index of the array.
+7. When we found the element then we print it using println.
+
+IMPLEMENTATION:
+
+int arr[] = {10,83,07,45,32,01};
+size of array is==> arr.lenght ==> 06
+
+index = value
+0th   = 10
+1st   = 83
+2nd   = 07
+3rd   = 45
+4th   = 32
+5th   = 01
+
+
+now setting int element = arr[0];
+==> element = 10
+
+now iteration part:
+we know that element =10, arr.length =6 AOA
+we setted the for loop as it should always be less than 6 means it can get to 5th index
+
+1. i=0, element=10
+arr[i]>element ==> arr[0]>element ==> 10 > 10 == false
+
+2. i=1,element=10
+arr[i]>element ==> arr[1]>element ==> 83 > 10 == true
+will enter the conditional block:
+element = arr[i]
+now at index 1 condition becomes true and index 1 stores 83 value.
+==>element = 83
+
+3. i=2,element =83
+arr[i]>element ==> arr[2]>element ==> 7 > 83 == false
+
+4. i=3,element =83
+arr[i]>element ==> arr[3]>element ==> 45 > 83 == false
+
+5. i=4, element =83
+arr[i]>element ==> arr[4]>element ==> 32 > 83 == false
+
+6. i=5, element =83
+arr[i]>element ==> arr[5]>element ==> 1 > 83 == false
+
+it will not get i=6 as contion setted as i<arr.length i.e i<6 do false
+
+it will breakout from loop and print the element.
