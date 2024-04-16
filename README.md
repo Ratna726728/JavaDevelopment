@@ -111,4 +111,8 @@ DAY 27:<br>
 NOTES: Array<br>
 HACKERRANK: Java Stack<br>
 
+DAY 28:<br>
+NOTES: Array coding problems<br>
+HACKERRANK: Java Hashset<br>
+
 
