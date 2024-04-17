@@ -115,4 +115,7 @@ DAY 28:<br>
 NOTES: Array coding problems<br>
 HACKERRANK: Java Hashset<br>
 
+DAT 29:<br>
+NOTES: Array coding problems<br>
+HACKERRANK: Java Generics<br>
 
