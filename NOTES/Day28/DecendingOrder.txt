@@ -1,0 +1,19 @@
+program name: program to sort the elements in an array in descending order.
+code>>
+
+Explanation:
+1. Declare, instantiate and initialize an array arr[].
+2. create a local variable temp and initialize it with 0 value.
+3. By using a simple for loop print the original array.
+4. use nested for loops for finding the descending order.
+5. First for loop consists a i variable which is starting from 0 and it has limit till
+the size or original array.
+6. inner for loop consist variable j and it starts with index i+1 and it also goes till
+the size of original array.
+7. we have if conditional block which will do comparision between arr[i] index value and
+arr[j] index value. If arr[i] is less than arr[j] then it will goes inside conditional
+block.
+8. we will set of temp=arr[i] index value. then arr[i] will set value of arr[j], and
+finally arr[j] will set value of temp. temp consist arr[i] value.
+9. latstly we will traverse the array and print the new descending order array.
+
