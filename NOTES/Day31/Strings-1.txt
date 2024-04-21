@@ -1,0 +1,174 @@
+STRINGS:
+
+- String is the class that represents sequence of character.
+
+- Package is Java.lang
+
+- String class implements Serializable, comparable, char sequence interface.
+
+- String is immutable, once string object is created, it cannot changed but new string object is created.
+
+- Strings are the type of objects that can store the character of values and in Java, every character is stored in 16 bits i,e using UTF 16-bit encoding. 
+
+- A string acts the same as an array of characters in Java.
+
+- Let's see a code for Strings.
+
+package com.creation;
+
+public class StringDemo {
+
+	public static void main(String[] args) {
+		
+		String s = "Ajit";
+		s = s.concat("Rajesh");
+		
+		System.out.println(s);
+	}
+}
+
+OUTPUT:
+AjitRajesh
+
+- Here, first it will create the object with Ajit then later
+- It will create another object with AjitRajesh. so here we can't directly assign Rajesh value to s variable
+because string are immutable.
+
+- For mutable class, you can use String buffer and String builder class, we will understand them shortly.
+
+
+# How to create a String object?
+
+1. String literal
+2. By new keyword.
+
+
+1. String Literal:
+
+- It is created by using double quotes.
+example- String s = "ram";
+
+- To make Java more memory efficient (because no new objects are created if it exists already in the string 
+constant pool).
+
+- Each time when you create String literal, the JVM check string constant pool first, if the string object is
+already present in the pool, reference to pooled instance is returned. If string does not present in the pool, 
+new string instance is created and placed in pool.
+
+Example- String s1 = "fun";
+String s2 = "java"; //will not create the new instance.
+
+In the above example, only one object will be created, firstly JVM will not find any string object with value
+"java" in the string constant pool, so it will create new object. After that it will find string with 
+value = "java" in pool, it will not create the new object but will return reference to same instance.
+
+IMG:(String pool.jpg)
+
+# why java uses the concept of string literal?
+
+- To make the java more memory efficient (because no new object is created if it exist already in string 
+constant pool.)
+
+
+2. By new keyword.
+
+- String s = new String(“Welcome”);
+- In such a case, JVM will create a new string object in normal (non-pool) heap memory and the literal 
+“Welcome” will be placed in the string constant pool. 
+- The variable s will refer to the object in the heap (non-pool).
+
+Note- Two objects will be created in this case.
+
+package com.creation;
+
+public class StringDemo1 {
+
+	public static void main(String[] args) {
+		String s1 = "java";
+		String s2 = new String("java");
+		System.out.println(s1 = s2);
+		System.out.println(s1.equals(s2));
+	}
+}
+
+# Interfaces and Classes in Strings in Java
+
+- CharBuffer: This class implements the CharSequence interface. This class is used to allow character buffers 
+to be used in place of CharSequences. An example of such usage is the regular-expression package 
+java.util.regex.
+
+- String: It is a sequence of characters. In Java, objects of String are immutable which means a constant and 
+cannot be changed once created.
+
+- CharSequence Interface:
+
+CharSequence Interface is used for representing the sequence of Characters in Java.
+Classes that are implemented using the CharSequence interface are mentioned below and these provides much of 
+functionality like substring, lastoccurence, first occurence, concatenate , toupper, tolower etc.
+
+1. String
+2. StringBuffer
+3. StringBuilder
+
+
+1. String
+String is an immutable class which means a constant and cannot be changed once created and if wish to change, 
+we need to create an new object and even the functionality it provides like toupper, tolower, etc all these 
+return a new object , its not modify the original object. It is automatically thread safe.
+
+Syntax:
+
+String str= "geeks";
+           or
+String str= new String("geeks")
+
+2. StringBuffer
+
+StringBuffer is a peer class of String, it is mutable in nature and it is thread safe class , we can use it 
+when we have multi threaded environment and shared object of string buffer i.e, used by mutiple thread. As it 
+is thread safe so there is extra overhead, so it is mainly used for multithreaded program.
+
+Syntax:
+
+StringBuffer demoString = new StringBuffer("blue");
+
+3. StringBuilder
+
+StringBuilder in Java represents an alternative to String and StringBuffer Class, as it creates a mutable 
+sequence of characters and it is not thread safe. It is used only within the thread , so there is no extra 
+overhead , so it is mainly used for single threaded program.
+
+Syntax:
+
+StringBuilder demoString = new StringBuilder();
+demoString.append("red");
+
+
+4. StringTokenizer
+StringTokenizer class in Java is used to break a string into tokens.
+
+IMG:(string tokenizer.jpg)
+
+Example:
+A StringTokenizer object internally maintains a current position within the string to be tokenized. 
+Some operations advance this current position past the characters processed. 
+A token is returned by taking a substring of the string that was used to create the StringTokenizer object.
+
+StringJoiner is a class in java.util package which is used to construct a sequence of characters(strings) 
+separated by a delimiter and optionally starting with a supplied prefix and ending with a supplied suffix. 
+Though this can also be done with the help of the StringBuilder class to append a delimiter after each string, StringJoiner provides an easy way to do that without much code to write.
+
+Syntax:
+
+public StringJoiner(CharSequence delimiter)
+
+Above we saw we can create a string by  String Literal.
+
+String demoString =”Welcome”;
+
+Here the JVM checks the String Constant Pool. If the string does not exist, then a new string instance is 
+created and placed in a pool. If the string exists, then it will not create a new object. Rather, it will 
+return the reference to the same instance. The cache that stores these string instances is known as the String Constant pool or String Pool. In earlier versions of Java up to JDK 6 String pool was located inside 
+PermGen(Permanent Generation) space. But in JDK 7 it is moved to the main heap area.
+
+
