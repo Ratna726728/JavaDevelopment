@@ -127,3 +127,6 @@ DAY 31:<br>
 NOTES:Strings-1 <br>
 HACKERRANK:Java Sort<br>
 
+DAY 32:<br>
+NOTES:Strings-2 <br>
+HACKERRANK:Java Deque<br>
