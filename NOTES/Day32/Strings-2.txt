@@ -1,0 +1,162 @@
+STRINGS 2:
+
+#METHODS in Strings:
+1. int length():
+
+- Returns the number of characters in the String.
+- example: 
+String str = "lower case upper case";
+str.length();
+
+- see code in day 32 codes section Day32>>com>>methods>>Example.java
+
+2. Char charAt(int i)
+
+- Returns the character at ith index.
+- example:
+String str = "lower case upper case";
+str.charAt(4);
+
+3. String substring (int i)
+
+- Return the substring from the ith  index character to end.
+-example:
+String str = "lower case upper case"
+String str1 = str.substring(3);
+
+4. String substring (int i, int j)
+
+- Returns the substring from i to j-1 index.
+-example:
+String str = "lower case upper case";
+String str2 = str.substring(3, 8);
+
+5. String concat( String str)
+
+- Concatenates specified string to the end of this string.
+- example:
+String str = "lower case upper case";
+String str3 = "italic bold";
+String output = str.concat(str3);
+
+6. int indexOf (String s)
+
+- Returns the index within the string of the first occurrence of the specified string.
+- If String s is not present in input string then -1 is returned as the default value.
+- example:
+1.   String str = "lower case upper case";
+     int output = s.indexOf(“upper”);
+
+2.   String str = "lower case upper case";
+     int output = s.indexOf(“narrow”); //return -1
+
+7. int indexOf (String s, int i)
+
+- Returns the index within the string of the first occurrence of the specified string, starting at the specified 
+index.
+- example:
+String str = "lower case upper case";
+int output = s.indexOf("se",3);
+
+8. Int lastIndexOf( String s)
+
+- Returns the index within the string of the last occurrence of the specified string.
+- If String s is not present in input string then -1 is returned as the default value.
+- example:
+1. String s = ”Learn Share Learn”;
+   int output = s.lastIndexOf("a"); // returns 14
+2. String s = "Learn Share Learn"
+   int output = s.indexOf(“Play”);  // return -1
+
+9. boolean equals( Object otherObj)
+
+- Compares this string to the specified object.
+- example:
+String str = "lower case upper case";
+Boolean out = str.equals(“lower case upper case”); // returns true
+Boolean out = “Geeks”.equals(“geeks”); // returns false
+
+10. boolean  equalsIgnoreCase (String anotherString)
+
+- Compares string to another string, ignoring case considerations.
+-example: 
+ Boolean out= “Geeks”.equalsIgnoreCase(“Geeks”); // returns true
+ Boolean out = “Geeks”.equalsIgnoreCase(“geeks”); // returns true
+
+11. int compareTo( String anotherString) 
+
+- Compares two string lexicographically.
+- example:
+ int out = s1.compareTo(s2);  
+// where s1 and s2 are
+// strings to be compared
+ This returns difference s1-s2. If :
+ out < 0  // s1 comes before s2
+ out = 0  // s1 and s2 are equal.
+ out > 0   // s1 comes after s2.
+
+12. int compareToIgnoreCase( String anotherString) 
+
+- Compares two string lexicographically, ignoring case considerations.
+- example:
+ int out = s1.compareToIgnoreCase(s2);  
+// where s1 and s2 are 
+// strings to be compared
+ This returns difference s1-s2. If :
+ out < 0  // s1 comes before s2
+ out = 0   // s1 and s2 are equal.
+ out > 0   // s1 comes after s2.
+- Note: In this case, it will not consider case of a letter (it will ignore whether it is uppercase or lowercase).
+
+13. String toLowerCase()
+
+- Converts all the characters in the String to lower case.
+- example:
+String word1 = “HeLLo”;
+String word3 = word1.toLowerCase(); // returns “hello"
+
+14. String toUpperCase()
+
+- Converts all the characters in the String to upper case.
+- example:
+String word1 = “HeLLo”;
+String word2 = word1.toUpperCase(); // returns “HELLO”
+
+15. String trim()
+
+- Returns the copy of the String, by removing whitespaces at both ends. It does not affect whitespaces in the middle.
+- example:
+String word1 = “ Learn Share Learn “;
+String word2 = word1.trim(); // returns “Learn Share Learn”
+
+16. String replace (char oldChar, char newChar)
+
+- Returns new string by replacing all occurrences of oldChar with newChar.
+- example:
+String s1 = “feeksforfeeks“;
+String s2 = “feeksforfeeks”.replace(‘f’ ,’g’); // return “geeksforgeeks”
+Note: s1 is still feeksforfeeks and s2 is geeksgorgeeks
+
+17. boolean contains(string) :
+
+- Returns true if string contains contains the given string
+- example:
+String s1="geeksforgeeks";
+String s2="geeks";
+s1.contains(s2) // return true
+  
+18. Char[] toCharArray():
+
+- Converts this String to a new character array.
+- example:
+String s1="geeksforgeeks";
+char []ch=s1.toCharArray();  // returns [ 'g', 'e' , 'e' , 'k' , 's' , 'f', 'o', 'r' , 'g' , 'e' , 'e' , 'k' ,'s' ]
+
+
+19. boolean starsWith(string):
+
+- Return true if string starts with this prefix.
+- example:
+String s1="geeksforgeeks";
+String s2="geeks";
+s1.startsWith(s2) // return true
