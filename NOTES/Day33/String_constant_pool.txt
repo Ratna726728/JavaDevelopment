@@ -1,0 +1,101 @@
+String constant pool examples:
+
+There are 7 scenarios in this cases:
+1. 
+package com.stringconstantpool;
+
+public class Scenario1 {
+
+	public static void main(String[] args) {
+		String s1="ratnadeep";
+		String s2= new String("ratnadeep");
+		System.out.println(s1 == s2);//false
+		System.out.println(s1.equals(s2));//true
+	}
+}
+
+2.
+package com.stringconstantpool;
+
+public class Scenario2 {
+
+	public static void main(String[] args) {
+		String s1 = "ratnadeep";
+		String s2 = new String("Akola");
+		s2=s1;
+		System.out.println(s1 == s2);//true
+		System.out.println(s1.equals(s2));//true
+	}
+}
+
+3.
+package com.stringconstantpool;
+
+public class Scenario3 {
+
+	public static void main(String[] args) {
+		String s1 = new String("Ratnadeep");
+		String s2 = new String("Akola");
+		s2=s1;
+
+		System.out.println(s1 == s2);//true
+		System.out.println(s1.equals(s2));//true
+	}
+}
+
+4.
+package com.stringconstantpool;
+
+public class Scenario4 {
+
+	public static void main(String[] args) {
+		String s1 = "Ratnadeep";
+		String s2 = new String("Akola");
+		System.out.println(s1 == s2);//false
+		System.out.println(s1.equals(s2));//false
+	}
+}
+
+
+5.
+package com.stringconstantpool;
+
+public class Scenario5 {
+
+	public static void main(String[] args) {
+		String s1 = new String("Ratnadeep");
+		String s2 = new String("Akola");
+		System.out.println(s1 == s2);//false
+		System.out.println(s1.equals(s2));//false
+	}
+}
+
+
+6.
+package com.stringconstantpool;
+
+public class Scenario6 {
+
+	public static void main(String[] args) {
+		String s1 = "RAJ";
+		String s2 = "raj";
+		
+		System.out.println(s1 == s2);//false
+		System.out.println(s1.equals(s2));//false
+	}
+}
+
+
+7. 
+package com.stringconstantpool;
+
+public class Scenario7 {
+
+	public static void main(String[] args) {
+		String s1 = new String("RAJ");
+		String s2 = new String("raj");
+		System.out.println(s1 == s2);//false
+		System.out.println(s1.equals(s2));//false
+	}
+}
+
