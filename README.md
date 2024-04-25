@@ -135,3 +135,10 @@ DAY 33:<br>
 NOTES: Strings constant pool<br>
 HACKERRANK: Java BitSet<br>
 
+DAY 34:<br>
+NOTES: String practice code<br>
+HACKERRANK: Java Priority Queue<br>
+
+DAY 35:<br>
+NOTES: String codes to solve<br>
+HACKERRANK: <br>
