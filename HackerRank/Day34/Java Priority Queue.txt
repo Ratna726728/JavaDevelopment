@@ -86,4 +86,88 @@ As all events are completed, the name of each of the remaining students is print
 
 CODE:
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+import java.util.*;
+/*
+ * Create the Student and Priorities classes here.
+ */
+ class Student implements Comparable<Student>{
+     String name;
+     double gpa;
+     int id;
+     
+     public Student(String name, double gpa, int id){
+        this.name = name;
+        this.gpa = gpa;
+        this.id = id;    
+     }
+     
+     public String getName(){ return name;}
+     public double getCGPA(){ return gpa;}
+     public int getID(){ return id;}
+          
+     @Override
+     public int compareTo(Student student){
+        int comp = (int) Math.signum(student.getCGPA() - gpa);
+        if (comp != 0) return comp;
+        comp = name.compareTo(student.getName());
+        if (comp != 0){
+            return comp;
+        }
+        return student.getID() - id;
+     }
+ }
+ 
+ class Priorities{     
+     TreeSet<Student> students = new TreeSet<Student>();
+         
+     public List<Student> getStudents(List<String> events){         
+         for (String event:events){
+             processEvent(event);
+         }
+         return new ArrayList<Student>(students);
+    }
+    
+    protected void processEvent(String event){
+        String tokens[] = event.split(" ");
+        if (tokens[0].compareTo("ENTER") == 0){
+            students.add(fromEvent(tokens));        
+        } 
+        else{ // SERVED
+            students.pollFirst();                        
+        }
+        
+    }
+    
+    protected Student fromEvent(String[] tokens){         
+         return new Student(tokens[1], Double.valueOf(tokens[2]), Integer.valueOf(tokens[3]));
+     }
 
+ }
+
+public class Solution {
+    private final static Scanner scan = new Scanner(System.in);
+    private final static Priorities priorities = new Priorities();
+    
+    public static void main(String[] args) {
+        int totalEvents = Integer.parseInt(scan.nextLine());    
+        List<String> events = new ArrayList<>();
+        
+        while (totalEvents-- != 0) {
+            String event = scan.nextLine();
+            events.add(event);
+        }
+        
+        List<Student> students = priorities.getStudents(events);
+        
+        if (students.isEmpty()) {
+            System.out.println("EMPTY");
+        } else {
+            for (Student st: students) {
+                System.out.println(st.getName());
+            }
+        }
+    }
+}
