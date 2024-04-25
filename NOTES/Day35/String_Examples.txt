@@ -1,0 +1,7 @@
+Questions:
+
+1. Program to create a String.
+2. Program to compare one string with another string.
+3. Program to reverse a string.
+4. Program to search a word inside a string.
+5. program to remove particular word from String.
