@@ -142,3 +142,7 @@ HACKERRANK: Java Priority Queue<br>
 DAY 35:<br>
 NOTES: String codes to solve<br>
 HACKERRANK: Java Method Overriding 2 (Super Keyword)<br>
+
+DAY 36:<br>
+NOTES: Collection framework, collection<br>
+HACKERRANK: Java Inheritance I<br>
