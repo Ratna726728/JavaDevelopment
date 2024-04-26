@@ -1,0 +1,36 @@
+COLLECTION FRAMEWORK:
+
+- Collection framework contains collection of classes and interface that work together.
+
+What is the need of collection?
+
+1. Array are fixed in size, once it is created we cannot change it's size based on requirement
+
+2. Array can hold homogenous data elements.
+
+3. There is no readymade method support available in array.
+
+To overcome this problem, we should go for collection.
+
+1. Collections are growable in nature, based on our requirement we can increase or decrease 
+the size.
+
+2. Collection can hold homogenous and heterogenous elements.
+
+3. Every collection class is implemented based on some data structure.
+
+4. Hence readymade method support is available.
+
+##DIFFERENCE BETWEEN ARRAY AND COLLECTION.
+----------------------------------------------------------------------------------------------
+|                    ARRAY                       |                 COLLECTION                |----------------------------------------------------------------------------------------------| Fixed in size                                  | Growable in nature                        |
+----------------------------------------------------------------------------------------------
+| It hold homogenous data only.                  | It hold homogenous and heterogenous type  |
+|                                                | of data.                                  |
+----------------------------------------------------------------------------------------------| Readymade method support is not available      | Readymade method support is available     |
+----------------------------------------------------------------------------------------------
+| Array can hold both primitives data types and  | It hold only objects not primitives data  |
+| objects.                                       | type.                                     |
+----------------------------------------------------------------------------------------------
+
+
