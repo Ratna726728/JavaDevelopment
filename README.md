@@ -146,3 +146,8 @@ HACKERRANK: Java Method Overriding 2 (Super Keyword)<br>
 DAY 36:<br>
 NOTES: Collection framework, collection<br>
 HACKERRANK: Java Inheritance I<br>
+
+DAY 37:<br>
+NOTES: List, ArrayList<br>
+HACKERRANK: Java Inheritance II<br>
+
