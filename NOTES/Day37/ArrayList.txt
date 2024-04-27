@@ -1,0 +1,65 @@
+ArrayList:
+
+- ArrayList extends AbstractList and implements List interface.
+
+- It is present is java.util package.
+
+- Duplicates are allowed.
+
+- Insertion order is preserved.
+
+- Heterogenous objects are allowed.
+
+- Null insertion is possible.
+
+
+# constructors:
+
+There are 3 types of constructors as below:
+
+1. ArrayList arrayList = new ArrayList();
+
+- Create the empty array list with default initial capacity 10. (10 capacity means we can add 10 elements)
+    
+    private static final int DEFAULT_CAPACITY = 10;
+
+- Once array list reaches it's max capacity then new array list will be created with it's new capacity.
+
+- We can add upto 10 elements but when we add 11th element the size of array increased automatically.
+
+
+2. ArrayList arrayList = new ArrayList(int initial_capacity);
+
+- Here we can create ArrayList with any capacity. 
+
+- just like any other constructor of ArrayList this is also growable in nature.
+
+- example:
+
+ArrayList arrayList = new ArrayList(20);
+
+
+3. ArrayList arrayList = new ArrayList(Collection c);
+
+- c means we can pass any collection object.
+
+
+NOTES:
+1. ArrayList is the best choice if our frequent operation is retrival operation. It implements the random 
+access interface.
+
+2. ArrayList is the worst choice if our frequent operation is insertion or deletion.(because serveral shift 
+operation are required for this).
+
+
+#HOW TO GET SYNCRONIZEED VERSION OF ARRAYLIST?
+
+By Default, all the methods in array list are non-synchronized but we can get synchrnized version of arraylist
+by using collection class synchronized list method.
+
+Example - ArrayList arrayList = new ArrayList(); //this is non-synchornized
+
+List list = Collection.synchronizedList(arrayList); //this is synchornized
+
+
+

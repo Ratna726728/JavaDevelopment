@@ -1,0 +1,15 @@
+LIST:
+
+- It is child Interface of collection.
+
+- It is present in java.util package.
+
+- If we want to represent group of individual objects as single entity where duplicates are allowed and
+insertion order is preserved then we should go for list.
+
+- We can differentiates by using index.
+
+- We can preserve insertion order by using index. Hence index plays important role. It will get the same
+sequence of element while retrieving the elements.
+
+- It has three subclasses in java such as- ArrayList, LinkedList, Vector, Stack.
