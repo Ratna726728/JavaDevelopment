@@ -1,0 +1,5 @@
+Question:
+
+1. Program for ArrayList using for loop.
+2. Program for copy one arraylist into another arraylist using iterator.
+
