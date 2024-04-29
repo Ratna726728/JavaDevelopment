@@ -155,7 +155,7 @@ DAY 38:<br>
 NOTES: Arraylist examples<br>
 HACKERRANK: Java Abstract class<br>
 
-DAY 39:
+DAY 39:<br>
 NOTES: ArrayList examples <br>
 HACKERRANK: Java Interfaces<br>
 
