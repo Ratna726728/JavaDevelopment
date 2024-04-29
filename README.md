@@ -151,3 +151,11 @@ DAY 37:<br>
 NOTES: List, ArrayList<br>
 HACKERRANK: Java Inheritance II<br>
 
+DAY 38:<br>
+NOTES: Arraylist examples<br>
+HACKERRANK: Java Abstract class<br>
+
+DAY 39:
+NOTES: ArrayList examples <br>
+HACKERRANK: Java Interfaces<br>
+
