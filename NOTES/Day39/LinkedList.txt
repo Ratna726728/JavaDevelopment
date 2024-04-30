@@ -1,0 +1,49 @@
+# LinkedList
+
+- It is a child of collection.
+- It is present in java.util package
+- Insertion order is preserved.
+- Underlying data structure is double linked list.
+- Duplicates are allowed.
+- Heterogeneous objects are allowed 
+- Null insertion is possible
+- LinkedList will implements serializable and clonable interface but not random access interface
+- LinkedList is best choice if our frequent operation is insertion and deletion in middle.
+- LinkedList is worst choice if our frequent operation is retrival.
+
+# Methods
+
+1. void addFirst();
+2. void addLast();
+3. object getFirst();
+4. object getLast();
+5. object removeFirst();
+6. object removeLast();
+
+
+#Constructor
+
+1. LinkedList l = new LinkedList();
+
+Create the empty LinkedList object.
+
+2. LinkedList l = new LinkedList(Collection c);
+
+create the object for given collection.
+
+
+
+
+# Difference between LinkedList and ArrayList.
+---------------------------------------------------------------------------------------------------------------
+|              ArrayList                               |                       LinkedList                     |
+---------------------------------------------------------------------------------------------------------------
+|It is best choice if our frequent operation is        | It is the best choice if our frequent operation is   |
+|retrival.                                             | is insertion and deletion                            |
+---------------------------------------------------------------------------------------------------------------
+|It is worst choice if our frequent operation is       | It is worst choice if our frequent operation is      |
+| insertion and deletion.                              | retrival                                             |
+---------------------------------------------------------------------------------------------------------------
+|Underlying data structure for ArrayList is resizable  | Underlying data structure is double linked list.     |
+| or growable array.                                   |                                                      |
+---------------------------------------------------------------------------------------------------------------
