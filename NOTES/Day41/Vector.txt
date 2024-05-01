@@ -1,0 +1,69 @@
+- The underlying data structure for vector is growable or resizable array.
+- Duplicates objects are allowed.
+- Insertion order is preserved.
+- Null Insertion is possible 
+- heterogeous objects are allowed.
+- Vector class implements serializable, clonable and randomaccess interface
+- Most of methods are present in vector are synchornized.
+- Hence vector object is thread safe.
+- Best choice if frequent operation is retrieval.
+
+#methods:
+***** for adding objects *****
+add(Object o)
+add(int index, object o)
+addElement(object o)
+
+***** for removing objects ****
+remove(object o)
+remove(int index)
+removeElement(object o)
+
+***** for accessing elements ******
+Object get(int index)
+Object ElementAt(int index)
+Object firstElement()
+Obejct lastElement()
+
+
+***** Other methods *****
+int size();
+int capacity();
+
+
+#constructor
+
+1. Vector v = new Vector();
+
+create the empty objects with default  initial capacity 10, once the vector reaches it's max capacity a new 
+vector object will be created with:
+New capacity = 2*current capacity.
+
+2. Vector v = new Vector(int intial_capacity);
+
+create the empty vector object with specified initial capacity.
+
+3. Vector v = new Vector(int intial_capacity, int increamental_capacity);
+
+4. Vector v = new Vector(Collection c);
+
+Create the equivalent vector object for given collection.
+
+
+#Difference between ArrayList and vector
+-----------------------------------------------------------------------------------------------------------------
+|                       ArrayList                           |                          Vector                   |
+-----------------------------------------------------------------------------------------------------------------
+|Every method present in arraylist is non synchornized      | Every method present in vector is synchornized    |
+-----------------------------------------------------------------------------------------------------------------
+|At a time multiple threads are allowed to operate on       | At a time only one thread is allowed to operate   |
+|arraylist object, hence arraylist is not thread safe.      | on vector object, hence vector is thread safe.    |
+-----------------------------------------------------------------------------------------------------------------
+|Threads are not required to wait to operate on arraylist,  | Threads are required to wait to operate on vector,|
+|hence performance is high.                                 | hence performance is low.                         |
+-----------------------------------------------------------------------------------------------------------------
+|Introduced in 1.2 version, it is non-legacy class          | Introduced in 1.0 version, it is legacy class.    |
+-----------------------------------------------------------------------------------------------------------------
+
+NOTE: Legacy class means which comes from old generation called as Legacy.
+stack and vector  are legacy classes.
