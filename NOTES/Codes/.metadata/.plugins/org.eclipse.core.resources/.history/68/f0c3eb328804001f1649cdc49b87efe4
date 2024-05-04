@@ -1,0 +1,10 @@
+package com.test;
+
+import java.util.ArrayList;
+
+public class Capacity {
+
+	ArrayList arrayList = new ArrayList();
+	al.add(10);
+	al.
+}
