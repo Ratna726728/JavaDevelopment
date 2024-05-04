@@ -159,3 +159,16 @@ DAY 39:<br>
 NOTES: ArrayList examples <br>
 HACKERRANK: Java Interfaces<br>
 
+DAY 40:<br>
+NOTES: LinkedList<br>
+HACKERRANK:Java Method Overriding<br>
+
+DAY 41:<br>
+NOTES: Vector<br>
+HACKERRANK:Java instanceOf Keyword<br>
+
+DAY 42:<br>
+NOTES: Stack<br>
+HACKERRANK:Java Iterator<br>
+
+
