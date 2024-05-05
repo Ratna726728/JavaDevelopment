@@ -1,0 +1,34 @@
+HASHSET:
+
+- Underlying data structure is hashtable.
+
+- Duplicates are not allowed. If we are trying to insert the duplicates then we won't get any compile.
+
+- Insertion order is not preserved.
+
+- Heterogenous objects are allowed.
+
+- Null insertion is possible.
+
+- It implements serializable and clonable interface but not randomaccess interface.
+
+- HashSet is best choice if frequent operation is search operation.
+
+#constructor:
+
+1. HashSet hs = new HashSet();
+
+Create the empty hashset object with default initial capacity 16 and default fill ratio is 0.75.
+
+2. HashSet hs = new HashSet(int initialcapacity);
+
+Create the empty hashset object with specified initial capacity and default fill ratio is 0.75.
+
+3. HashSet hs = new HashSet(int initialcapacity, float loadfactor);
+
+Create the empty hashset object with specified intial capacity and specified load factor.
+
+4. HashSet hs = new HashSet(Collection c);
+
+Load factor or fill ratio- After loading, how much factor, new hashset object will be created that factor
+is called as load factor.

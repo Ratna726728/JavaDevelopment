@@ -1,0 +1,15 @@
+SET:
+
+- Set is a interface.
+- It is child of collection.
+- It is present in java.util package.
+- If we want to represent group of individual objects as single entity where duplicates are not allowed
+and insertion order is preserved then we should go for set.
+- We can store at most one null value in Set. 
+- Set is implemented by HashSet, LinkedHashSet, and TreeSet.
+- Set can be instantiated as:
+
+Set<data-type> s1 = new HashSet<data-type>();  
+Set<data-type> s2 = new LinkedHashSet<data-type>();  
+Set<data-type> s3 = new TreeSet<data-type>(); 
+
