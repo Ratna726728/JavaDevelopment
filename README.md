@@ -171,4 +171,8 @@ DAY 42:<br>
 NOTES: Stack<br>
 HACKERRANK:Java Iterator<br>
 
+DAY 43:<br>
+NOTES: Set, HashSet<br>
+HACKERRANK: Java Exception Handling (Try-catch)<br>
+
 
