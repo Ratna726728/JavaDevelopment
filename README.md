@@ -175,4 +175,8 @@ DAY 43:<br>
 NOTES: Set, HashSet<br>
 HACKERRANK: Java Exception Handling (Try-catch)<br>
 
+DAY 44:<br>
+NOTES: LinkedHashSet<br>
+HACKERRANK: Java Exception Handling<br>
+
 
