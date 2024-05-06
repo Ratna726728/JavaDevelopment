@@ -1,0 +1,24 @@
+LINKEDHASHSET:
+
+- It is child class of HashSet.
+
+- Extends HashSet and implements Set, Cloneable, java.io.Serializable.
+
+- Duplicates are not allowed.
+
+- Present in java.util package
+
+- Introduced in 1.2 version.
+
+- It is exactly same as hashset but except the following difference:
+
+---------------------------------------------------------------------------------------------------------------
+|                       HashSet                          |                        LinkedHashSet               |---------------------------------------------------------------------------------------------------------------| The underlying data structure is hashtable             | The underlying data structure is hashtable+        ||                                                        | LinkedList (that is hybrid data structure).        |---------------------------------------------------------------------------------------------------------------| Insertion order is not preserved.                      | Insertion order is preserved.                      |---------------------------------------------------------------------------------------------------------------| Introduced in 1.2 version.                             | Introduced in 1.4 version.                         |---------------------------------------------------------------------------------------------------------------
+
+NOTES:
+
+1. Load factor is vary between 0.0 to 1.0 and default load factor is 0.75.
+
+2. LinkedHashSet is best choice if we want to develop cache based application where duplicates are not allowed and insertion order is preserved.
+
+
