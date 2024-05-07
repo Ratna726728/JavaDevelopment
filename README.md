@@ -179,4 +179,8 @@ DAY 44:<br>
 NOTES: LinkedHashSet<br>
 HACKERRANK: Java Exception Handling<br>
 
+Day 45:<br>
+NOTES: SortedSet, TreeSet<br>
+HACKERRANK: Java Varargs - Simple Addition<br>
+
 
