@@ -1,0 +1,27 @@
+TreeSet:
+
+1. Underlying data structure is balanced tree.
+2. Duplicate objects are not allowed.
+3. Insertion order is not preserved.
+4. All the objects will be inserted according to some sorting order.
+5. Heterogenous objects are not allowed.
+6. If we are trying to insert the heterogeneous objects then will get run time exception 
+saying ClassCasteException.
+7. Null insertion is not allowed, if we try to insert then will get run time exception saying
+NullPointerException.
+
+#constructor:
+
+1. TreeSet ts = new TreeSet();
+create the empty treeset object where elements will be inserted according to default natural 
+sorting order.
+
+2. TreeSet ts = new TreeSet(Comparator c);
+Create empty treeset object where elements will be inserted according to customized sorting 
+order.
+
+3. TreeSet t = new TreeSet(SortedSet s);
+
+4. TreeSet t = new TreeSet(Collection c);
+
+

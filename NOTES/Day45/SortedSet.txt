@@ -1,0 +1,14 @@
+SORTEDSET:
+
+1. It is the child interface of set.
+
+2. If we want to represent group of objects according to some sorting order and duplicates are
+not allowed then we should go for sortedset.
+
+#methods:
+
+Object first()- return the first element of SortedSet.
+
+Object last()- return the last element of SortedSet.
+
+
