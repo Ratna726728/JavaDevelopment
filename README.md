@@ -183,4 +183,8 @@ Day 45:<br>
 NOTES: SortedSet, TreeSet<br>
 HACKERRANK: Java Varargs - Simple Addition<br>
 
+Day 46:<br>
+NOTES: HashSet codes<br>
+HACKERRANK:Java Reflection - Attributes<br>
+
 
