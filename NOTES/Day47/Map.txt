@@ -1,0 +1,29 @@
+MAP:
+
+1. If we want to represent group of individual objects as key value pair then go for map.
+
+2. Example- 
+Roll no.   Name
+102        Ram
+103        Shyam
+
+3. Both Key and values are objects, duplicated keys are not allowed, but values may be duplicated.
+
+4. It is not part of collection because they are of an incompatible type. List, Set and Queue are a collection of 
+similar kind of objects but just values where a Map is a collection of key and values pairs.
+
+
+                                                    Map(I) 1.2 version
+						           |
+ 	-----------------------------------------------------------------------------------------------------
+	|                         |                                         |                               |
+     HashMap(1.2 v)            WeakHashMap(1.2 v)                       SortedMap(I)(1.2 V)       Dictionary(AC)(1.2v)
+        |                                                                   |                               |
+     LinkedHashMap(1.4 v)                                               NavigableMap(I)(1.6 v)        Hashtable(1.2 v)
+                                                                            |                               |
+									  TreeMap(1.2 v)                 Properties
+									                                  (1.0 v)
+
+
+
+
