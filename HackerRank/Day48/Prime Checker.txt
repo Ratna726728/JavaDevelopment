@@ -1,0 +1,98 @@
+Question:
+
+You are given a class Solution and its main method in the editor. Your task is to create a class Prime. The class Prime 
+should contain a single method checkPrime.
+
+The locked code in the editor will call the checkPrime method with one or more integer arguments. You should write the 
+checkPrime method in such a way that the code prints only the prime numbers.
+
+Please read the code given in the editor carefully. Also please do not use method overloading!
+
+Note: You may get a compile time error in this problem due to the statement below:
+
+  BufferedReader br=new BufferedReader(new InputStreamReader(in));
+This was added intentionally, and you have to figure out a way to get rid of the error.
+
+Input Format:
+
+There are only five lines of input, each containing one integer.
+
+Output Format:
+
+There will be only four lines of output. Each line contains only prime numbers depending upon the parameters passed to 
+checkPrime in the main method of the class Solution. In case there is no prime number, then a blank line should be printed.
+
+Sample Input:
+
+2
+1
+3
+4
+5
+
+Sample Output:
+
+2
+2
+2 3
+2 3 5
+
+
+CODE:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        List<Integer> list = new ArrayList<>();
+        int count = 0;
+        while (sc.hasNextInt()) {
+            count++;
+            list.add(sc.nextInt());
+            if (count != 4) {
+                Prime.checkPrime(list);
+            }
+        }
+    }
+
+    static class Prime {
+        static void checkPrime(List<Integer> numbers) {
+            String primesMessage = "";
+
+            if (numbers.size() == 1 && numbers.get(0) == 1) {
+                System.out.println();
+                return;
+            }
+
+            for (Integer n : numbers) {
+                if (n == 1) {
+                    continue;
+                }
+
+                boolean isPrime = true;
+
+                for (int i = 2; i < n; i++) {
+                    if (n % i == 0) {
+                        isPrime = false;
+                        break;
+                    }
+                }
+
+                if (isPrime) {
+                    primesMessage += n + " ";
+                }
+            }
+
+            if (primesMessage != "") {
+                System.out.println(primesMessage);
+            } else {
+                System.out.println();
+            }
+        }
+
+    }
+}
