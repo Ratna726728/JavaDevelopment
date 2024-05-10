@@ -187,4 +187,12 @@ Day 46:<br>
 NOTES: HashSet codes<br>
 HACKERRANK:Java Reflection - Attributes<br>
 
+Day 47:<br>
+NOTES: Map<br>
+HACKERRANK: can you access?<br>
+
+Day 48:<br>
+NOTES: HashMap<br>
+HACKERRANK: Prime checker<br>
+
 
