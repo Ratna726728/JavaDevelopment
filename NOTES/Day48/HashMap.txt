@@ -1,0 +1,20 @@
+HashMap:
+
+- A HashMap is class which implements the map interface.
+
+- It stores values based on key.
+
+- It has 16 size and internally it will increase the size by double, so new size will be 32, 64, 128.
+
+- It is unordered, which means that the key must be unique.
+
+- It may have null key- null value.
+
+- For adding elements in HashMap we use the put method.
+
+- Return type of put method is object.
+
+Example:
+
+HashMap hashMap = new HashMap();
+hashMap.put(10,"maker");
