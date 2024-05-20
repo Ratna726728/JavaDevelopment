@@ -195,4 +195,8 @@ Day 48:<br>
 NOTES: HashMap<br>
 HACKERRANK: Prime checker<br>
 
+Day 49:<br>
+NOTES: LinkedHashMap<br>
+HACKERRANK: Java Factory Pattern <br>
+
 
