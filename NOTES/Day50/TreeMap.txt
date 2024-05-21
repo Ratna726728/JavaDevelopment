@@ -1,0 +1,16 @@
+TreeMap:
+
+- The TreeMap is a class which implements NavigableMap interface which is the sub-interface of SortedMap.
+
+- It stores values based on key.
+
+- It is stored in java.util package.
+
+- It is ordered but in ascending Manner.
+
+- Key's Should be unique.
+
+- It cannot have null key at run time but can have null values because the interpreter will not understand how to sort 
+null with other values.
+
+
