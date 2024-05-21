@@ -199,4 +199,9 @@ Day 49:<br>
 NOTES: LinkedHashMap<br>
 HACKERRANK: Java Factory Pattern <br>
 
+Day 50:<br>
+NOTES: TreeMap<br>
+HACKERRANK: Java Singleton Pattern<br>
+
+
 
