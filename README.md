@@ -203,5 +203,8 @@ Day 50:<br>
 NOTES: TreeMap<br>
 HACKERRANK: Java Singleton Pattern<br>
 
+Day 51:<br>
+NOTES: Hashtable<br>
+HACKERRANK: Java Visitor Pattern<br>
 
 
