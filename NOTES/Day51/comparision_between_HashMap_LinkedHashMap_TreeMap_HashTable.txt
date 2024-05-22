@@ -1,0 +1,10 @@
+Comparision between HashMap, LinkedHashMap, TreeMap and HashTable:
+
+----------------------------------------------------------------------------------------------| Topic            | HashMap     | LinkedHashMap       | TreeMap             | HashTable     |
+----------------------------------------------------------------------------------------------|Duplicate Key     | Not Allowed | Not Allowed         | Not Allowed         | Not Allowed   |
+----------------------------------------------------------------------------------------------|Ordering          | Unordered   | Maintains insertion | Maintain Accessing  | unordered     ||                  |             | order               | order               |               |
+----------------------------------------------------------------------------------------------| Null(Key Value)  | Allow       | Allow               | Key not allowed but | Not Allowed   |
+|                  |             |                     | value is iterator   |               |
+----------------------------------------------------------------------------------------------|Accessing Elements| Iterator    | Iterator            | Iterator            | Iterator      |
+----------------------------------------------------------------------------------------------|Thread Safety     | No          | No                  | No                  | Yes           |
+----------------------------------------------------------------------------------------------
