@@ -207,4 +207,9 @@ Day 51:<br>
 NOTES: Hashtable<br>
 HACKERRANK: Java Visitor Pattern<br>
 
+Day 52:<br>
+NOTES: Codes on Map<br>
+HACKERRANK: Java Annotations<br>
+
+
 
