@@ -211,5 +211,8 @@ Day 52:<br>
 NOTES: Codes on Map<br>
 HACKERRANK: Java Annotations<br>
 
+Day 53:<br>
+NOTES: Codes on Map<br>
+HACKERRANK: Covariant Return Types<br>
 
 
