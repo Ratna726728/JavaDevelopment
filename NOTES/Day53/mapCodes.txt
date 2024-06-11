@@ -1,0 +1,24 @@
+Codes on Map:
+
+1. How to return map to method.
+2. Can we take custom Employee class as key in hashMap.
+3. Suppose, I have business requirement as below
+Business requirement-
+E Shop
+
+Computer & Accessories
+Watch
+Speaker
+Laptop
+
+Electronics 
+Printer
+Mouse
+Keyboards
+
+Furniture
+Bed
+Chair
+Sofa
+
+
