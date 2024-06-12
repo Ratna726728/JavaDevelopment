@@ -1,0 +1,79 @@
+Java History and Features of Java:
+
+Q.1 What is Java?
+
+Ans: 
+- Java is Object oriented programming language which was developed by sun microsystem in 1995.
+- It was invented by James Gosling that is known as "Father of Java technology".
+
+Q.2 What are the different features of Java? Enlist all of them and explain any 5?
+
+Ans:
+- There are total 13 features of Java.
+1. Simple                 2. Platform Independent
+3. Architectural Neutral  4. Portable
+5. Secure                 6. Object-Oriented
+7. Multithreaded          8. Robust
+9. Interpreted            10. High Performance
+11. Distributed           12. Dynamic
+13. Network Savvy
+
+- Portable: 
+It is portable because converting source code into byte code that byte code can run on any platform
+that's why it is  portable.
+
+- Secure:
+With the help of java we can develop virus  free system. It is very secure programming language which
+is mostly used in banking industry. Some list of security features is encryption, decryption,
+cryptography, SSL, etc.
+
+- Multithreaded:
+It is the best feature in java programming languages. Because it has performed the multiple tasks
+simultaneously. It shares the common memory area. 
+
+- Interpreted:
+Java Interpreter is the process of converting byte code into native code called as interpreted.
+
+- Distributed:
+Java also supports the RMI (Remote method Invocation). This feature enables program to invoke the method
+across the network.
+
+
+Q.3 Why Java is platform independent?
+
+Ans:
+It follows WORA principle, WRITE ONCE RUN ANYWHERE. We can run same Java program on windows, Linux, and
+Mac opreration system also.
+
+Q.4 Why Java is Robust?
+
+Ans:
+There is no need of pointer concept to access string, array, file, etc. Garbage collection is done 
+automatically so no need to do it manually like other programming languages. It avoids th memory
+leakage problems.
+
+Q.5 JIT compiler?
+
+Ans:
+JIT stands for Just-In-Time compiler, Because it has more information available  i.e. which code is 
+executed frequently, which classes has been loaded, optimize the code for better speed.
+
+Q.6 Why Java is not 100% OOPs?
+
+Ans:
+A fully object-oriented language needs to have all the 4 oops concepts. In addition to that, all 
+predefined and, user-defined types must be objects and, all the operations should be performed only 
+by calling the methods of a class.
+Though java follows all the four object-oriented concepts,
+- Java has predefined primitive data types (which are not objects).
+- You can access the members of a static class without creating an object of it.
+Therefore, Java is not considered as fully object-oriented Technology.
+
+Q.7 Which version of Java you used? and how to find out the verion of Java?
+
+Ans:
+I have used Java version "1.8.0_241" i.e. "1.8".
+To find out the version, open the command prompt and type command "java -version" it will show you
+java version installed in your system.
+
+
