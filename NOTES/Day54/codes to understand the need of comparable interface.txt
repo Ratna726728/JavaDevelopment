@@ -1,0 +1,10 @@
+Comparable interface introduction codes:
+
+1. This interface is present in java.lang package.
+2. It contains the only one method comparTo()
+
+public int compareTo(Object obj);
+
+
+Now, let's understand the need of comaparable interface with codes:
+Let's hop in coding section>>> Day54
