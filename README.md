@@ -215,4 +215,8 @@ Day 53:<br>
 NOTES: Codes on Map<br>
 HACKERRANK: Covariant Return Types<br>
 
+Day 54:<br>
+NOTES: Need of comparable interface<br>
+HACKERRANK: Java Lambda Expressions<br>
+
 
