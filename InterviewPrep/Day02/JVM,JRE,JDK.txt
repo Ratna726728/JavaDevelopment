@@ -1,0 +1,136 @@
+JVM, JRE and JDK
+
+Q.1 What is JVM?
+
+Ans:
+
+JVM (Java Virtual Machine) is a run time environment in which application or program is executed.
+JVM consist's of 5 blocks:
+1. Class loader
+2. Memory Area's
+3. Execution engine
+4. Native method interface
+5. Java Native Libraries
+
+
+Q.2 Working, architecture of JVM.
+
+Ans:
+
+JVM is consists of 5 blocks: class loader, memory area's, Execution engine, Native method interface, Java 
+Native Libraries.
+
+IMG: (Architecture of JVM.jpeg)
+
+1. Class Loader:
+
+Whenever we run the program it is first loaded by class loader into memory. It is used to load the .class file.
+
+2. Class Area:
+
+It is also known as method area. It will store the information about method code, method name, fields, etc.
+
+3. Heap Area:
+
+It is the run time area where objects are stored.
+
+4. Stack Area: 
+
+It is used to store the information about the local variables.
+
+5. PC register:
+
+It includes address of java virtual machine instruction to be currently executing. 
+PC stands for program counter.
+
+6. Native Method Stack:
+
+It includes native method information only.
+
+7. Native Method Interface:
+
+It is an interface that interacts with the Native method libraries and Execution Engine(C, C++) requires
+for the execution.
+
+8. Execution Engine:
+
+It contains java compiler and interpreter information.
+
+9. Java Native Libraries:
+
+It contains set of libraries which are written in other programming language such as C for another application.
+
+
+Q.3 What are the memory area's of JVM?
+
+Ans:
+
+1. Class area
+2. Heap area
+3. Stack area
+4. PC register
+5. Native method stack
+
+
+Q.4 What is JRE? Explain.
+
+Ans:
+
+JRE stands for Java Runtime Environment.
+It includes set of libraries(Java Library is just a collection of classes that have been written by somebody
+else already), other files and rt.jar that java virtual machine requires at run-time.
+IMG: (JRE.JPG)
+
+
+Q.5 What is JDK? Explain.
+
+Ans:
+
+JDK stands for Java Development Kit.
+It includes java runtime environment(JRE) + development tools such as java, javac, and java docs.
+IMG: (JDK.jpeg)
+
+Q.6 What is javac?
+
+Ans:
+
+javac is the program that translates Java code into bytecode (.class file) - an intermediate format which 
+is understandable by the Java Virtual Machine (JVM).
+
+Q.7 What is rt.jar file?
+
+Ans:
+
+The rt.jar file is a fundamental part of the Java Runtime Environment (JRE). It stands for "runtime" and 
+contains all the core classes and libraries necessary for running Java applications.
+
+* Purpose of rt.jar
+1. Core Classes: rt.jar includes essential Java classes that are part of the Java Standard Edition (Java SE). 
+These classes are found in the java.*, javax.*, and other core packages.
+
+2. Execution Environment: It provides the necessary classes and resources for the Java Virtual Machine (JVM) 
+to execute Java applications.
+
+3. Optimization: Having a single JAR file for core classes helps in optimizing the loading and execution of 
+Java programs. It reduces the overhead associated with loading multiple smaller files.
+
+The rt.jar file is located in the lib directory of the JRE installation directory, typically at 
+"JAVA_HOME/jre/lib/rt.jar".
+
+
+Q.8 What is J2EE?
+
+Ans:
+
+Java 2 Platform, Enterprise Edition (J2EE), now known as Java Platform, Enterprise Edition (Java EE) and 
+currently Jakarta EE, is a set of specifications, extensions, and associated technologies for developing and 
+deploying enterprise-level applications in Java.
+Java EE is designed for large-scale, distributed, transactional, and secure enterprise-level applications.
+
+
+Q.9 Difference between path and classpath?
+
+Ans:
+
+---------------------------------------------------------------------------------------------------------------|                PATH                                   |                    CLASSPATH                        |---------------------------------------------------------------------------------------------------------------| An environment variable is used by the operating      | An environment variable is used by the Java compiler|| system to find the executable files.                  | to find the path of classes.                        |---------------------------------------------------------------------------------------------------------------| PATH setting up an environment for the operating      | Classpath setting up the environment for Java. Java || system. Operating System will look in this PATH for   | will use to find compiled classes.                  || executables.                                          |                                                     |---------------------------------------------------------------------------------------------------------------| Refers to the operating system.                       | Refers to the Developing Environment.               |---------------------------------------------------------------------------------------------------------------| In path variable, we must place .\bin folder path     | In classpath, we must place .\lib\jar file or       ||                                                       | directory path in which .java file is available.    |---------------------------------------------------------------------------------------------------------------| PATH is used by CMD prompt to find binary files.      | CLASSPATH is used by the compiler and JVM to find   ||                                                       | library files.                                      |---------------------------------------------------------------------------------------------------------------
+
