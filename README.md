@@ -219,4 +219,8 @@ Day 54:<br>
 NOTES: Need of comparable interface<br>
 HACKERRANK: Java Lambda Expressions<br>
 
+Day 55:<br>
+NOTES: Comparable and comparator interfaces<br>
+HACKERRANK: Java MD5<br>
+
 
