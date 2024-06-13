@@ -1,0 +1,24 @@
+Comparator Interface:
+
+1. we ca use comparator to define our own sorting(customized sorting order)
+
+2. It present in java.util package.
+
+3. It defines two methods- 
+
+public int compare(Object obj1, Object obj2)
+
+public boolean equals();
+
+4. Whenever we are implementing the comparator interface, compulsory we should
+provide the implementation for compare() method.
+
+5. Implementing the equals method is optional, because it is already available in every
+java class from object class.
+
+
+# Difference between comparable and comparator
+
+---------------------------------------------------------------------------------------------------|             Comparable                          |                 Comparator                    |---------------------------------------------------------------------------------------------------| It is meant for default natural sorting order.  | It is meant for customized sorting order      |
+---------------------------------------------------------------------------------------------------| It is present in java.lang package.             | It is present in java.util package            |---------------------------------------------------------------------------------------------------| This interface defines only one method          | This interface defines two methods i.e.       |
+| compareTo().                                    | compare() and equals().                       |---------------------------------------------------------------------------------------------------
