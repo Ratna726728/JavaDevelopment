@@ -1,0 +1,114 @@
+How HashSet internally works?
+
+Each and every element in set is unique. so that there is no duplicate element in set. So In Java, if we 
+want to add element in set then write a code like this:
+
+Example:
+package com.example;
+
+import java.util.HashSet;
+
+public class HashSetDemo {
+
+	public static void main(String[] args) {
+		HashSet hs = new HashSet();
+		hs.add(3);
+		hs.add("ram");
+		hs.add("pune");
+
+		System.out.println(hs);
+	}
+}
+
+Output:
+[3, pune, ram]
+
+Now, let's add the duplicate element in the above code as:
+
+package com.example;
+
+import java.util.HashSet;
+
+public class HashSetDemo {
+
+	public static void main(String[] args) {
+		HashSet hs = new HashSet();
+		hs.add(3);
+		hs.add("ram");
+		hs.add("pune");
+
+		System.out.println("without duplicate: "+hs);
+
+		//after adding duplicate
+		hs.add(3);
+		hs.add("pune");
+
+		System.out.println("after adding duplicate: "+hs);
+
+	}
+}
+
+output:
+
+without duplicate: [3, pune, ram]
+after adding duplicate: [3, pune, ram]
+
+Now what happens internally when you pass duplicate elements in set then add() method of set object, it will
+return false and do not add to hashset as element is already present.
+But main problem arising that how it return false, here is the answer:
+
+When you open hashset implementation of add method() in java API's you will find the following code-
+
+public class HashSet<E>
+    extends AbstractSet<E>
+    implements Set<E>, Cloneable, java.io.Serializable
+{
+
+    private transient HashMap<E,Object> map;
+
+    // Dummy value to associate with an Object in the backing Map
+    private static final Object PRESENT = new Object();
+
+    public HashSet() {
+        map = new HashMap<>();
+    }
+
+    public boolean add(E e) {
+        return map.put(e, PRESENT)==null;
+    }
+
+
+We are achieving uniqueness in set, internally java through hashmap. whenever you create the object of 
+hashset it will create the object of hashmap as see int above.
+
+As we know, in hashmap each key is unique. We do in set is that we pass argument in add(Element E) that is 
+E as key in hashmap, now we need to associate some value to key, so what java developer did to pass dummy
+value that is(new Object()); which is referred by object reference PRESENT.
+
+So actually when you are adding line in hashset like hashset.add(3) what java internally is that it will put
+that element as E here as 3 key in hashmao and some dummy value that object is passed as value to key.
+
+If you see code of hashmapput(K k, Value v) method, you will find something like this, 
+
+public v put( K key, V value){
+   //some code
+}
+
+The main point is that .put (key, value) will return 
+
+1. Null, if key is unique and added to map.
+2. Old value of key, if key is duplicate.
+
+so, in HashSetAdd() method we check return value of map.put(key, value) method will null value i.e.
+
+public Boolean add(E e){
+
+  //code here
+
+}
+
+So if Map.put(key, value) return null, then map.put(e, PRESENT)== null, then map.put(e, PRESENT)==null
+will return true & element added to hashset.
+
+So if Map.put(key, value) return old value of key, then map.put(e, PRESENT)== null, then
+map.put(e, PRESENT)==null will return false & element is not added to hashset.
