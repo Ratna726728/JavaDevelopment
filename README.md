@@ -223,4 +223,8 @@ Day 55:<br>
 NOTES: Comparable and comparator interfaces<br>
 HACKERRANK: Java MD5<br>
 
+Day 56:<br>
+NOTES: Internal working of hashset<br>
+HACKERRANK: Java SHA-256<br>
+
 
