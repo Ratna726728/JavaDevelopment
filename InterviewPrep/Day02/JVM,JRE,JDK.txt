@@ -132,5 +132,20 @@ Q.9 Difference between path and classpath?
 
 Ans:
 
----------------------------------------------------------------------------------------------------------------|                PATH                                   |                    CLASSPATH                        |---------------------------------------------------------------------------------------------------------------| An environment variable is used by the operating      | An environment variable is used by the Java compiler|| system to find the executable files.                  | to find the path of classes.                        |---------------------------------------------------------------------------------------------------------------| PATH setting up an environment for the operating      | Classpath setting up the environment for Java. Java || system. Operating System will look in this PATH for   | will use to find compiled classes.                  || executables.                                          |                                                     |---------------------------------------------------------------------------------------------------------------| Refers to the operating system.                       | Refers to the Developing Environment.               |---------------------------------------------------------------------------------------------------------------| In path variable, we must place .\bin folder path     | In classpath, we must place .\lib\jar file or       ||                                                       | directory path in which .java file is available.    |---------------------------------------------------------------------------------------------------------------| PATH is used by CMD prompt to find binary files.      | CLASSPATH is used by the compiler and JVM to find   ||                                                       | library files.                                      |---------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+|                PATH                                   |                    CLASSPATH                       | -------------------------------------------------------------------------------------------------------------| | An environment variable is used by the operating      | An environment variable is used by the Javacompiler|
+| system to find the executable files.                  | to find the path of classes.                       | --------------------------------------------------------------------------------------------------------------
+| PATH setting up an environment for the operating      | Classpath setting up the environment for Java. Java|
+| system. Operating System will look in this PATH for   | will use to find compiled classes.                 |
+| executables.                                          |                                                    |
+--------------------------------------------------------------------------------------------------------------
+| Refers to the operating system.                       | Refers to the Developing Environment.              |
+--------------------------------------------------------------------------------------------------------------
+| In path variable, we must place .\bin folder path     | In classpath, we must place .\lib\jar file or      |
+|                                                       | directory path in which .java file is available.   |
+--------------------------------------------------------------------------------------------------------------
+| PATH is used by CMD prompt to find binary files.      | CLASSPATH is used by the compiler and JVM to find  |
+|                                                       | library files.                                     |
+--------------------------------------------------------------------------------------------------------------
+
 
