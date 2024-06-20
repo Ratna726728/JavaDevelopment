@@ -1,0 +1,55 @@
+Internal working of HashMap:
+
+if you want to represent group of objects as key-value pair then you should go for map.
+
+import java.util.HashMap;
+
+public class HashMapDemo {
+
+	public static void main(String[] args) {
+		HashMap hm = new HashMap();
+		hm.put("rahul", 10);
+		hm.put("rathod", 20);
+		hm.put("amaravati", 30);
+		hm.put("rahul", 50);
+		System.out.println(hm);
+		
+	}
+}
+//output
+//{rahul=50, amaravati=30, rathod=20}
+
+public class HashMap<K,V> extends AbstractMap<K,V>
+    implements Map<K,V>, Cloneable, Serializable {
+
+
+How hashCode() and equals() method works into HashMap?
+
+hashCode() method:
+
+hashCode method is used to get the hashcode of every objects.
+
+equals() method:
+
+equals method is used to check that 2 objects are equal or not. This method is provided by 
+Object class. hashMap uses equals() to compare the key whether they are equal or not. if 
+equals() method return true, they are equal otherwise not equal.
+
+How to calculate index internally?
+
+put(K k, V v) // here put is the method having key and value pair
+hash(k) -> hash(naveen) -> 23560520
+index=hash & (n-1) here index=2
+so naveen will be stored at 2nd position.
+
+Next time again I get the 2nd index or position then what will happen?
+It will store it at 2nd and uses the linked list as shown in fig.
+
+After that I get the 6th index so singh will be stored at 6th position then next time get the 
+index 10th then pune will be placed at 10th position.
+
+How get methods works here?
+
+Now Let's try some get method to get a value. get(K key) method is used to get a value by its
+key. If you don't know the key then it is not possible fetch a value.
+
